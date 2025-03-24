@@ -1,23 +1,46 @@
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 
-
-
 function Login() {
     const [login, setLogin] = useState('');
     const [password, setPassword] = useState('');
+    const [errorMessage, setErrorMessage] = useState('');
+    const [valid, setValid] = useState(false);
     const navigate = useNavigate();
 
     const handleLogin = (e) => {
         e.preventDefault();
 
+       
         if (login === '' || password === '') {
-            alert('Proszę wprowadzić login i hasło.');
+            setErrorMessage('Proszę wprowadzić login i hasło.');
+            setValid(false);
             return;
         }
 
-        alert('Logowanie powiodło się!');
-        navigate('/home');
+       
+        if (login === 'Admin' && password === 'Owca') {
+            setErrorMessage('');
+            setValid(true);
+
+          
+            setTimeout(() => {
+                navigate('/');
+            }, 1000);
+        } else {
+            setErrorMessage('Nieprawidłowy login lub hasło.');
+            setValid(false);
+        }
+    };
+
+    const inputStyle = (fieldName) => {
+        if (errorMessage && (fieldName === '' || (login !== 'Admin' || password !== 'Owca'))) {
+            return { border: '2px solid red' };
+        }
+        if (valid) {
+            return { border: '2px solid green' };
+        }
+        return {};
     };
 
     return (
@@ -30,6 +53,7 @@ function Login() {
                         placeholder="Login"
                         value={login}
                         onChange={(e) => setLogin(e.target.value)}
+                        style={inputStyle(login)}
                     />
                 </div>
                 <div className="form-group">
@@ -38,13 +62,18 @@ function Login() {
                         placeholder="Hasło"
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
+                        style={inputStyle(password)}
                     />
                 </div>
                 <p style={{ textAlign: 'right', fontSize: '13px', color: 'gray', marginTop: '10px' }}>
-                Nie masz konta? <Link to="/signup" style={{ color: 'gray' }}>Zarejestruj się</Link>
-            </p>
+                    Nie masz konta? <Link to="/signup" style={{ color: 'gray' }}>Zarejestruj się</Link>
+                </p>
                 <button type="submit" className="form-button">Zaloguj</button>
             </form>
+
+            {errorMessage && (
+                <p style={{ color: 'red', marginTop: '10px', fontSize: '14px' }}>{errorMessage}</p>
+            )}
         </div>
     );
 }

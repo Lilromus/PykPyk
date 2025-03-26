@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './LoginSignup.css';
-import logo2 from './assets/logo2.png'
+import logo2 from './assets/logo123.png'
 
 function Home() {
     const navigate = useNavigate();
@@ -23,7 +23,7 @@ function Home() {
             }}>
                
                <div>
-                    <img src={logo2} alt="PykPyk logo" style={{ height: '35px', objectFit: 'contain' }} />
+                    <img src={logo2} alt="PykPyk logo" style={{ height: '55px', objectFit: 'contain' }} />
                 </div>
 
 

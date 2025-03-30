@@ -1,13 +1,15 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './LoginSignup.css';
-import logo2 from './assets/logo123.png'
+import logo2 from './assets/logo123.png';
+// import heroImage from './assets/hero-image.jpg';
 
 function Home() {
     const navigate = useNavigate();
 
     return (
         <div style={{ margin: 0, padding: 0 }}>
+           
             <div style={{
                 width: '100vw',
                 backgroundColor: '#FFA500',
@@ -21,18 +23,15 @@ function Home() {
                 zIndex: 999,
                 boxSizing: 'border-box'
             }}>
-               
-               <div>
+                <div>
                     <img src={logo2} alt="PykPyk logo" style={{ height: '55px', objectFit: 'contain' }} />
                 </div>
 
-
-                
                 <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
+                    <span className="nav-link">O nas</span>
                     <span className="nav-link">Kontakt</span>
                     <span className="nav-link">Zostań Kurierem</span>
-                    <span className="nav-link">Centrum pomocy</span>
-                    <span className="nav-link">Oferty</span>
+                    <span className="nav-link">Partnerzy</span>
 
                     <button
                         onClick={() => navigate('/login')}
@@ -66,8 +65,27 @@ function Home() {
             </div>
 
             
-            <div style={{ textAlign: 'center', marginTop: '100px' }}>
-                <h1>Witaj w PykPyk</h1>
+            <div style={{
+                paddingBottom: '230 px',
+                paddingLeft: '380px'
+            }}>
+                <h1 style={{
+                    fontSize: '64px',
+                    fontWeight: 'bold',
+                    color: '#000',
+                    lineHeight: 1.2,
+                    marginBottom: '20px'
+                }}>
+                    Dostawa jedzenia i<br />
+                    nie tylko
+                </h1>
+                <p style={{
+                    fontSize: '20px',
+                    color: '#000',
+                    margin: 0
+                }}>
+                    Supermarkety, sklepy, apteki – wszystko, czego potrzebujesz!
+                </p>
             </div>
         </div>
     );

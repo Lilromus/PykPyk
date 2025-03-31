@@ -28,9 +28,11 @@ function Home() {
                 </div>
 
                 <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
-                    <span className="nav-link">O nas</span>
+                    <span className="nav-link">   
+                        O nas
+                        </span>
                     <span className="nav-link">Kontakt</span>
-                    <span className="nav-link">Zostań Kurierem</span>
+                    <span className="nav-link" onClick={() => navigate('/kurier')}>Zostań Kurierem</span>
                     <span className="nav-link">Partnerzy</span>
 
                     <button

@@ -2,25 +2,27 @@ import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import background from './assets/background.jpg';
 
-function Login() {
-    const [login, setLogin] = useState('');
-    const [password, setPassword] = useState('');
+function Kurier() {
+    const [Imie, setImie] = useState('');
+    const [Nazwisko, setNazwisko] = useState('');
+    const [Miasto, setMiasto] = useState('');
+    const [Wiek, setWiek] = useState('');
     const [errorMessage, setErrorMessage] = useState('');
     const [valid, setValid] = useState(false);
     const navigate = useNavigate();
 
-    const handleLogin = (e) => {
+    const handleImie = (e) => {
         e.preventDefault();
 
        
-        if (login === '' || password === '') {
-            setErrorMessage('Proszę wprowadzić login i hasło.');
+        if (Imie === '' || Nazwisko === '') {
+            setErrorMessage('Proszę wprowadzić Imie i Nazwisko.');
             setValid(false);
             return;
         }
 
        
-        if (login === 'Admin' && password === 'Owca') {
+        if (Imie === 'Admin' && Nazwisko === 'Owca') {
             setErrorMessage('');
             setValid(true);
 
@@ -29,13 +31,13 @@ function Login() {
                 navigate('/');
             }, 1000);
         } else {
-            setErrorMessage('Nieprawidłowy login lub hasło.');
+            setErrorMessage('Nieprawidłowy Imie lub hasło.');
             setValid(false);
         }
     };
 
     const inputStyle = (fieldName) => {
-        if (errorMessage && (fieldName === '' || (login !== 'Admin' || password !== 'Owca'))) {
+        if (errorMessage && (fieldName === '' || (Imie !== 'Admin' || Nazwisko !== 'Owca'))) {
             return { border: '2px solid red' };
         }
         if (valid) {
@@ -61,30 +63,39 @@ function Login() {
             }}
         >
             <div className="form-container" style={{ maxHeight: '90vh', overflowY: 'hidden' }}>
-                <h2>Logowanie</h2>
-                <form onSubmit={handleLogin}>
+                <h2>Wyślij formularz</h2>
+                <form onSubmit={handleImie}>
                     <div className="form-group">
                         <input
                             type="text"
-                            placeholder="Login"
-                            value={login}
-                            onChange={(e) => setLogin(e.target.value)}
-                            style={inputStyle(login)}
+                            placeholder="Imie"
+                            value={Imie}
+                            style={inputStyle(Imie)}
                         />
                     </div>
                     <div className="form-group">
                         <input
-                            type="password"
-                            placeholder="Hasło"
-                            value={password}
-                            onChange={(e) => setPassword(e.target.value)}
-                            style={inputStyle(password)}
+                            type="text"
+                            placeholder="Nazwisko"
+                            value={Nazwisko}
+                            style={inputStyle(Imie)}
                         />
                     </div>
-                    <p style={{ textAlign: 'right', fontSize: '13px', color: 'gray', marginTop: '10px' }}>
-                        Nie masz konta? <Link to="/signup" style={{ color: 'gray' }}>Zarejestruj się</Link>
-                    </p>
-                    <button type="submit" className="form-button">Zaloguj</button>
+                    <div className="form-group">
+                        <select name="" id="">
+                            <option value="cos">cos</option>
+                            <option value="cos">coss</option>
+                            </select>
+                    </div>
+                    <div className="form-group">
+                        <input
+                            type="text"
+                            placeholder="Wiek"
+                            value={Wiek}
+                            style={inputStyle(Imie)}
+                        />
+                    </div>
+                    <button type="submit" className="form-button">Wyślij</button>
                 </form>
     
                 {errorMessage && (
@@ -95,5 +106,4 @@ function Login() {
     );
     
 }
-
-export default Login;
+export default Kurier;

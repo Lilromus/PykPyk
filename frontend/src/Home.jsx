@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './LoginSignup.css';
 import logo2 from './assets/logo123.png';
-// import heroImage from './assets/hero-image.jpg';
+import heroImage from './assets/hero-image.jpg';
 
 function Home() {
     const navigate = useNavigate();
@@ -28,11 +28,10 @@ function Home() {
                 </div>
 
                 <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
-                    <span className="nav-link">   
-                        O nas
-                        </span>
+                    <span className="nav-link">O nas</span>
                     <span className="nav-link">Kontakt</span>
                     <span className="nav-link" onClick={() => navigate('/kurier')}>Zostań Kurierem</span>
+
                     <span className="nav-link">Partnerzy</span>
 
                     <button
@@ -66,31 +65,50 @@ function Home() {
                 </div>
             </div>
 
-            
             <div style={{
-                paddingBottom: '230 px',
-                paddingLeft: '380px'
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                paddingBottom: '120px',
+                paddingLeft: '200px',
+                gap: '40px'
             }}>
-                <h1 style={{
-                    fontSize: '64px',
-                    fontWeight: 'bold',
-                    color: '#000',
-                    lineHeight: 1.2,
-                    marginBottom: '20px'
-                }}>
-                    Dostawa jedzenia i<br />
-                    nie tylko
-                </h1>
-                <p style={{
-                    fontSize: '20px',
-                    color: '#000',
-                    margin: 0
-                }}>
-                    Supermarkety, sklepy, apteki – wszystko, czego potrzebujesz!
-                </p>
+             
+                <img
+                    src={heroImage}//png burger zdj plis
+                    alt="Hero"
+                    style={{
+                        width: '300px',
+                        height: 'auto',
+                        borderRadius: '20px',
+                        objectFit: 'cover'
+                    }}
+                />
+
+              
+                <div>
+                    <h1 style={{
+                        fontSize: '64px',
+                        fontWeight: 'bold',
+                        color: '#000',
+                        lineHeight: 1.2,
+                        marginBottom: '20px'
+                    }}>
+                        Dostawa jedzenia i<br />
+                        nie tylko
+                    </h1>
+                    <p style={{
+                        fontSize: '20px',
+                        color: '#000',
+                        margin: 0
+                    }}>
+                        Supermarkety, sklepy, apteki – wszystko, czego potrzebujesz!
+                    </p>
+                </div>
             </div>
         </div>
     );
 }
 
 export default Home;
+

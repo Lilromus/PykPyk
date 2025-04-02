@@ -7,9 +7,20 @@ import heroImage from './assets/hero-image.jpg';
 function Home() {
     const navigate = useNavigate();
 
+    const brands = [
+        { name: "McDonald's", img: 'mcdonalds.jpg' },
+        { name: "Sklep Internetowy Biedronka", img: 'biedronka.jpg' },
+        { name: "KFC", img: 'kfc.jpg' },
+        { name: "Burger King", img: 'burgerking.jpg' }, //TODO: dodac do assetow obrazki zaokraglone do tych restauracji 
+        { name: "Pizza Hut", img: 'pizzahut.jpg' }, 
+        { name: "Salad Story", img: 'saladstory.jpg' },
+        { name: "Pasibus", img: 'pasibus.jpg' },
+        { name: "Thai Wok", img: 'thaiwok.jpg' }
+    ];
+
     return (
         <div style={{ margin: 0, padding: 0 }}>
-           
+            {/* Nawigacja */}
             <div style={{
                 width: '100vw',
                 backgroundColor: '#FFA500',
@@ -31,7 +42,6 @@ function Home() {
                     <span className="nav-link">O nas</span>
                     <span className="nav-link">Kontakt</span>
                     <span className="nav-link" onClick={() => navigate('/kurier')}>Zostań Kurierem</span>
-
                     <span className="nav-link">Partnerzy</span>
 
                     <button
@@ -65,17 +75,20 @@ function Home() {
                 </div>
             </div>
 
+            {/* Sekcja główna */}
             <div style={{
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                paddingBottom: '120px',
-                paddingLeft: '200px',
-                gap: '40px'
+                paddingTop: '400px',
+                paddingLeft: '50px',
+                paddingRight: '50px',
+                gap: '40px',
+                minHeight: '100vh', 
             }}>
-             
+
                 <img
-                    src={heroImage}//png burger zdj plis
+                    src={heroImage}
                     alt="Hero"
                     style={{
                         width: '300px',
@@ -85,7 +98,6 @@ function Home() {
                     }}
                 />
 
-              
                 <div>
                     <h1 style={{
                         fontSize: '64px',
@@ -106,9 +118,63 @@ function Home() {
                     </p>
                 </div>
             </div>
+
+            {/* Sekcja restauracji */}
+            <div style={{
+                backgroundColor: 'white',
+                padding: '60px 20px',
+                textAlign: 'center',
+                minHeight: '500px',
+                width: '100vw',
+                marginLeft: 'calc(-50vw + 50%)'
+            }}>
+                <h2 style={{
+                    fontSize: '32px',
+                    fontWeight: 'bold',
+                    marginBottom: '40px'
+                }}>
+                    Polska: popularne restauracje i nie tylko
+                </h2>
+
+                <div style={{
+                    display: 'grid',
+                    gridTemplateColumns: 'repeat(4, 1fr)',
+                    gap: '40px',
+                    justifyItems: 'center',
+                    width: '100%',
+                    maxWidth: '1100px',
+                    margin: '0 auto'
+                }}>
+                    {brands.map((item, index) => (
+                        <div key={index} style={{ textAlign: 'center', width: '140px' }}>
+                            <img
+                                src={`/assets/${item.img}`}
+                                alt={item.name}
+                                style={{
+                                    width: '120px',
+                                    height: '120px',
+                                    borderRadius: '50%',
+                                    objectFit: 'cover',
+                                    marginBottom: '10px'
+                                }}
+                            />
+                            <div style={{
+                                backgroundColor: '#fcbf3d',
+                                borderRadius: '8px',
+                                padding: '5px 10px',
+                                fontWeight: '500',
+                                fontSize: '14px'
+                            }}>
+                                {item.name}
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+
+            
         </div>
     );
 }
 
 export default Home;
-

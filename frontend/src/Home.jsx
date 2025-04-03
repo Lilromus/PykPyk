@@ -169,11 +169,27 @@ function Home() {
                             </div>
                         </div>
                     ))}
+                    <p style={{ margin: '0 auto', textAlign: 'center' }}>
+                    <button
+                         onClick={() => navigate('/Partner')}
+                         style={{
+                            marginTop: '40px',
+                            padding: '12px 24px',
+                            backgroundColor: '#FFA500',
+                            color: 'white',                 //TODO: nieumiem to gowno wycentrowac ja pierdole
+                            border: 'none',
+                            borderRadius: '999px',
+                            fontSize: '16px',
+                            cursor: 'pointer'
+                        }}
+                     >
+                        Zostań naszym partnerem
+                         </button>
+                    </p>
+
+                   </div>
                 </div>
             </div>
-
-            
-        </div>
     );
 }
 

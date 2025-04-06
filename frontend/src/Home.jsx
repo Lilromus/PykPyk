@@ -11,7 +11,7 @@ function Home() {
     { name: "McDonald's", img: 'mcdonalds.jpg' },
     { name: "Sklep Internetowy Biedronka", img: 'biedronka.jpg' },
     { name: "KFC", img: 'kfc.jpg' },
-    { name: "Burger King", img: 'burgerking.jpg' },   //TODO: zdjecie za okraglowne w assetsach
+    { name: "Burger King", img: 'burgerking.jpg' },   //TODO: zdjecia zaokraglone plsss
     { name: "Pizza Hut", img: 'pizzahut.jpg' },
     { name: "Salad Story", img: 'saladstory.jpg' },
     { name: "Pasibus", img: 'pasibus.jpg' },
@@ -29,7 +29,7 @@ function Home() {
       {/* Nawigacja */}
       <div style={{
         width: '100vw',
-        backgroundColor: '#FFA500',
+        backgroundColor: '#efb541',
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center',
@@ -86,7 +86,7 @@ function Home() {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        paddingTop: '900px',
+        paddingTop: '1800px',
         paddingLeft: '50px',
         paddingRight: '50px',
         gap: '40px',
@@ -188,91 +188,189 @@ function Home() {
               cursor: 'pointer'
             }}
           >
-            <bold>Zostań naszym partnerem</bold>
+            <b>Zostań naszym partnerem</b>
           </button>
         </div>
       </div>
 
-      {/* Sekcja: Dlaczego warto wybrać PykPyk */}
-      <div
-        style={{
+      {/* Sekcja - Dostarczamy wszystko */}
+      <div style={{
         backgroundColor: '#fff',
         width: '100vw',
         marginLeft: 'calc(-50vw + 50%)',
         padding: '60px 20px',
-        textAlign: 'center',
-        }}
-        >
+        textAlign: 'center'
+      }}>
+        <h2 style={{
+          fontSize: '36px',
+          fontWeight: 'bold',
+          marginBottom: '60px'
+        }}>
+          Dostarczamy wszystko
+        </h2>
 
         <div style={{
-        backgroundColor: 'white',
-        width: '100vw',
-        marginLeft: 'calc(-50vw + 50%)',
-        padding: '60px 20px',
-        textAlign: 'center',
-      }}>
-  <h2 style={{
-    fontSize: '36px',
-    fontWeight: 'bold',
-    marginBottom: '60px',
-  }}>
-    Dostarczamy wszystko
-  </h2>
-
-  <div style={{
-    display: 'flex',
-    justifyContent: 'center',
-    gap: '60px',
-    flexWrap: 'wrap',
-    marginBottom: '40px'
-  }}>
-    {[
-      {
-        img: '/assets/delivery1.png', //TODO: zdjecie zaokraglone dla assetsow pls
-        title: 'Popularne restauracje w Twoim mieście',
-        text: <>
-          Dzięki szerokiej ofercie restauracji możesz zamówić ulubione jedzenie lub <span style={highlight}>sprawdzić nowe miejsca w okolicy.</span>
-        </>
-      },
-      {
-        img: '/assets/delivery2.png',
-        title: 'Szybka dostawa',
-        text: <>
-          Jak błyskawica! Zamów lub wyślij dowolny artykuł w swoim mieście, <span style={highlight}>a my go szybko dostarczymy.</span>
-        </>
-      },
-      {
-        img: '/assets/delivery3.png',
-        title: 'Dostawa artykułów spożywczych i nie tylko',
-        text: <>
-          U nas znajdziesz wszystko! <span style={highlight}>Od supermarketów po sklepy, apteki i kwiaciarnie</span> – jeśli punkt działa w Twoim mieście, złóż zamówienie, a my zajmiemy się dostawą.
-        </>
-      }
-    ].map((item, index) => (
-      <div key={index} style={{ maxWidth: '300px' }}>
-        <img src={item.img} alt={item.title} style={{ width: '100px', marginBottom: '20px' }} />
-        <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>{item.title}</h3>
-        <p style={{ fontSize: '16px', lineHeight: '1.6', color: '#333' }}>{item.text}</p>
-      </div>
-    ))}
-  </div>
-
-  <button style={{
-    padding: '12px 24px',
-    backgroundColor: '#00aa88',
-    color: 'white',
-    border: 'none',
-    borderRadius: '999px',
-    fontSize: '16px',
-    cursor: 'pointer',
-    fontWeight: 'bold'
-  }}>
-    Sprawdź okoliczne punkty
-  </button>
-</div>
-
+          display: 'flex',
+          justifyContent: 'center',
+          gap: '60px',
+          flexWrap: 'wrap',
+          marginBottom: '40px'
+        }}>
+          {[
+            {
+              img: '/assets/delivery1.png',
+              title: 'Popularne restauracje w Twoim mieście', //TODO: tu tez jakis zdjecia plsss
+              text: <>
+                Dzięki szerokiej ofercie restauracji możesz zamówić ulubione jedzenie lub <span style={highlight}>sprawdzić nowe miejsca w okolicy.</span>
+              </>
+            },
+            {
+              img: '/assets/delivery2.png',
+              title: 'Szybka dostawa',
+              text: <>
+                Jak błyskawica! Zamów lub wyślij dowolny artykuł w swoim mieście, <span style={highlight}>a my go szybko dostarczymy.</span>
+              </>
+            },
+            {
+              img: '/assets/delivery3.png',
+              title: 'Dostawa artykułów spożywczych i nie tylko',
+              text: <>
+                U nas znajdziesz wszystko! <span style={highlight}>Od supermarketów po sklepy, apteki i kwiaciarnie</span> – jeśli punkt działa w Twoim mieście, złóż zamówienie, a my zajmiemy się dostawą.
+              </>
+            }
+          ].map((item, index) => (
+            <div key={index} style={{ maxWidth: '300px' }}>
+              <img src={item.img} alt={item.title} style={{ width: '100px', marginBottom: '20px' }} />
+              <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>{item.title}</h3>
+              <p style={{ fontSize: '16px', lineHeight: '1.6', color: '#333' }}>{item.text}</p>
+            </div>
+          ))}
         </div>
+
+        <button style={{
+          padding: '12px 24px',
+          backgroundColor: '#00aa88',
+          color: 'white',
+          border: 'none',
+          borderRadius: '999px',
+          fontSize: '16px',
+          cursor: 'pointer',
+          fontWeight: 'bold'
+        }}>
+          Sprawdź okoliczne punkty
+        </button>
       </div>
+      {/* Miasta */}
+      <div style={{
+        padding: '60px 20px',
+        textAlign: 'center'
+      }}>
+        <h2 style={{
+          fontSize: '36px',
+          fontWeight: 'bold',
+          marginBottom: '40px'
+        }}>
+          Miasta w których dostarczamy
+        </h2>
+
+        <div style={{
+          display: 'flex',
+          flexWrap: 'wrap',
+          justifyContent: 'center',
+          gap: '16px',
+          marginBottom: '30px'
+        }}>
+
+          {["Warszawa", "Gdańsk", "Kraków", "Wrocław", "Łódź", "Poznań", "Katowice", "Bydgoszcz", "Szczecin", "Lublin"].map((city, index) => (
+            <div key={index} style={{
+              backgroundColor: 'white',
+              padding: '12px 24px',
+              borderRadius: '999px',
+              fontWeight: '500'
+            }}>{city}</div>
+          ))}
+        </div>
+
+        <button style={{
+          padding: '12px 24px',
+          backgroundColor: '#00aa88',
+          color: 'white',
+          border: 'none',
+          borderRadius: '999px',
+          fontSize: '16px',
+          fontWeight: 'bold',
+          marginBottom: '60px'
+        }}>
+          Zobacz wszystkie miasta
+        </button>
+
+        {/* Kategorie*/}
+
+        <h2 style={{
+          fontSize: '32px',
+          fontWeight: 'bold',
+          marginBottom: '30px'
+        }}>
+          Popularne kategorie
+        </h2>
+
+        <div style={{
+          display: 'flex',
+          flexWrap: 'wrap',
+          justifyContent: 'center',
+          gap: '16px',
+          marginBottom: '30px'
+        }}>
+          {["Kebab", "Pizza", "Sushi", "Kwiaty", "Burgery", "Ryby", "Prezenty"].map((category, index) => (
+            <div key={index} style={{
+              backgroundColor: 'white',
+              padding: '12px 24px',
+              borderRadius: '999px',
+              fontWeight: '500'
+            }}>{category}</div>
+          ))}
+        </div>
+
+        <button style={{
+          padding: '12px 24px',
+          backgroundColor: '#00aa88',
+          color: 'white',
+          border: 'none',
+          borderRadius: '999px',
+          fontSize: '16px',
+          fontWeight: 'bold'
+        }}>
+          Zobacz wszystkie kategorie
+        </button>
+      </div>
+
+      {/* O nas */}
+      <div style={{
+        backgroundColor: '#fff',
+        padding: '80px 20px',
+        width: '100vw',
+        textAlign: 'center'
+      }}>
+        <h2 style={{
+          fontSize: '36px',
+          fontWeight: 'bold',
+          marginBottom: '30px'
+        }}>
+          O nas
+        </h2>
+        <p style={{
+          maxWidth: '800px',
+          margin: '0 auto',
+          fontSize: '18px',
+          lineHeight: '1.6',
+          color: '#333'
+        }}>
+          <span style={highlight}>PykPyk to innowacyjna platforma dostaw, która łączy ludzi z lokalnymi restauracjami, sklepami i usługami. Naszą misją jest uproszczenie codziennych zakupów i dostaw dzięki szybkiemu, bezpiecznemu i wygodnemu systemowi zamówień. Niezależnie od tego, czy potrzebujesz jedzenia, produktów spożywczych, leków czy prezentu – my to dostarczymy. Działamy z pasją i lokalnym zaangażowaniem, bo wierzymy, że czas to najcenniejsza waluta.</span>
+        </p>
+      </div>
+    </div>
+
+    
   );
 }
 

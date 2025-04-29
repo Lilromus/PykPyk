@@ -9,6 +9,7 @@ body, html {
     height: 100vh; 
 }
 
+  
 .container {
     width: 90%;
     max-width: 800px;
@@ -113,6 +114,39 @@ input::placeholder {
 .form-button:hover,
 .action-button:hover {
     background-color: #FFA500;
+}
+
+#bombaclat{
+    width: 16%;
+    padding: 13px;
+    background-color: #edb957;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-right:29px;
+}
+
+#bombaclat:hover{
+    background-color: #FFA500;
+}
+
+#bombaclatv2{
+    width: 16%;
+    padding: 13px;
+    background-color: #44814b;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#bombaclatv2:hover{
+    background-color: #239430;
 }
 
 p {

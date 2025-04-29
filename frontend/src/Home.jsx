@@ -82,15 +82,16 @@ function Home() {
       </div>
 
       {/* Sekcja główna */}
+      <header>
       <div style={{
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        paddingTop: '1800px',
+        paddingTop: '2150px',
         paddingLeft: '50px',
         paddingRight: '50px',
         gap: '40px',
-        minHeight: '100vh'
+        minHeight: '70vh'
       }}>
         <img
           src={heroImage}
@@ -122,6 +123,7 @@ function Home() {
           </p>
         </div>
       </div>
+      </header>
 
       {/* Sekcja restauracji */}
       <div style={{
@@ -176,19 +178,8 @@ function Home() {
         </div>
 
         <div style={{ textAlign: 'center', marginTop: '40px' }}>
-          <button
-            onClick={() => navigate('/Partner')}
-            style={{
-              padding: '12px 24px',
-              backgroundColor: '#FFA500',
-              color: 'white',
-              border: 'none',
-              borderRadius: '999px',
-              fontSize: '16px',
-              cursor: 'pointer'
-            }}
-          >
-            <b>Zostań naszym partnerem</b>
+          <button id='bombaclat' onClick={() => navigate('/Partner')}>
+            Zostań naszym partnerem
           </button>
         </div>
       </div>
@@ -247,16 +238,7 @@ function Home() {
           ))}
         </div>
 
-        <button style={{
-          padding: '12px 24px',
-          backgroundColor: '#00aa88',
-          color: 'white',
-          border: 'none',
-          borderRadius: '999px',
-          fontSize: '16px',
-          cursor: 'pointer',
-          fontWeight: 'bold'
-        }}>
+        <button id='bombaclat'>
           Sprawdź okoliczne punkty
         </button>
       </div>
@@ -291,16 +273,7 @@ function Home() {
           ))}
         </div>
 
-        <button style={{
-          padding: '12px 24px',
-          backgroundColor: '#00aa88',
-          color: 'white',
-          border: 'none',
-          borderRadius: '999px',
-          fontSize: '16px',
-          fontWeight: 'bold',
-          marginBottom: '60px'
-        }}>
+        <button id='bombaclatv2'>
           Zobacz wszystkie miasta
         </button>
 
@@ -331,15 +304,7 @@ function Home() {
           ))}
         </div>
 
-        <button style={{
-          padding: '12px 24px',
-          backgroundColor: '#00aa88',
-          color: 'white',
-          border: 'none',
-          borderRadius: '999px',
-          fontSize: '16px',
-          fontWeight: 'bold'
-        }}>
+        <button id='bombaclatv2'>
           Zobacz wszystkie kategorie
         </button>
       </div>
@@ -368,6 +333,47 @@ function Home() {
           <span style={highlight}>PykPyk to innowacyjna platforma dostaw, która łączy ludzi z lokalnymi restauracjami, sklepami i usługami. Naszą misją jest uproszczenie codziennych zakupów i dostaw dzięki szybkiemu, bezpiecznemu i wygodnemu systemowi zamówień. Niezależnie od tego, czy potrzebujesz jedzenia, produktów spożywczych, leków czy prezentu – my to dostarczymy. Działamy z pasją i lokalnym zaangażowaniem, bo wierzymy, że czas to najcenniejsza waluta.</span>
         </p>
       </div>
+
+      <footer style={{
+        backgroundColor: '#1A1A1A',
+        padding: '40px 20px',
+        color: '#fff',
+        display: 'flex',
+        justifyContent: 'space-around',
+        flexWrap: 'wrap',
+        fontSize: '14px'
+      }}>
+    <div>
+        <h3 style={{ fontWeight: 'bold', marginBottom: '10px' }}>Let's do it together</h3>
+        <p>Glovo for Partners</p>
+        <p>Couriers</p>
+    </div>
+
+  <div>
+    <h3 style={{ fontWeight: 'bold', marginBottom: '10px' }}>Links of interest</h3>
+    <p>About us</p>
+    <p>FAQ</p>
+    <p>Contact us</p>
+  </div>
+
+  <div>
+    <h3 style={{ fontWeight: 'bold', marginBottom: '10px' }}>Follow us</h3>
+    <p>Facebook</p>
+    <p>Twitter</p>
+    <p>Instagram</p>
+  </div>
+
+  <div>
+    <h3 style={{ fontWeight: 'bold', marginBottom: '10px' }}>Top categories: Poland</h3>
+    <p>Kebab</p>
+    <p>Pizza</p>
+    <p>Sushi</p>
+    <p>Flowers</p>
+    <p>Burgers</p>
+    <p>Fish</p>
+  </div>
+</footer>
+
     </div>
 
     

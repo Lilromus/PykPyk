@@ -3,6 +3,13 @@ import { useNavigate } from 'react-router-dom';
 import './LoginSignup.css';
 import logo2 from './assets/logo123.png';
 import heroImage from './assets/hero-image.jpg';
+import ytlogo from './assets/youtube.png';
+import twitterlogo from './assets/twitterlogo.png';
+import facebooklogo from './assets/facebooklogo.png';
+import instagramlogo from './assets/instagramlogo.png';
+import phoneLogo from './assets/phonelogo.png'
+import emailLogo from './assets/email.png'
+import googlemapsLogo from './assets/googlemaps.png'
 
 function Home() {
   const navigate = useNavigate();
@@ -343,28 +350,64 @@ function Home() {
         flexWrap: 'wrap',
         fontSize: '14px'
       }}>
-    <div>
-        <h3 style={{ fontWeight: 'bold', marginBottom: '10px' }}>Let's do it together</h3>
-        <p>Glovo for Partners</p>
-        <p>Couriers</p>
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
+     <img src={logo2} alt="PykPyk logo" style={{ height: '55px', objectFit: 'contain', marginBottom: '10px'}} />
+     <p style={{
+      fontSize: '16px',
+      fontWeight: '500',
+      marginBottom: '20px'
+    }}>
+      Ułatwiamy dostęp do wszystkiego w Twoim mieście
+    </p>
+      <div style={{ display: 'flex', alignItems: 'center', gap: '20px'}}>
+      <a href="https://youtube.com/" target="_blank" rel="noopener noreferrer">
+      <img src={ytlogo} alt="YouTube" style={{ height: '20px', objectFit: 'contain' }} /> </a>
+      <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+      <img src={twitterlogo} alt="Twitter" style={{ height: '20px', objectFit: 'contain' }} /> </a>
+      <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer">
+      <img src={facebooklogo} alt="Facebook" style={{ height: '20px', objectFit: 'contain' }} /> </a>
+      <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer">
+      <img src={instagramlogo} alt="Instagram" style={{ height: '20px', objectFit: 'contain' }} /> </a>
+      </div>
     </div>
 
-  <div>
-    <h3 style={{ fontWeight: 'bold', marginBottom: '10px' }}>Links of interest</h3>
-    <p>About us</p>
-    <p>FAQ</p>
-    <p>Contact us</p>
+
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', color: '#ccc' }}>
+  <h3 style={{ fontWeight: 'bold', marginBottom: '10px', color: '#fff', fontSize: '16px' }}>Kontakt</h3>
+
+  <div style={{ display: 'flex', alignItems: 'center', marginBottom: '10px' }}>
+    <img
+      src={phoneLogo}
+      alt="Phone"
+      style={{ height: '20px', objectFit: 'contain', marginRight: '10px' }}
+    />
+    <span style={{ fontSize: '14px' }}>+48 123 456 789</span>
   </div>
 
-  <div>
-    <h3 style={{ fontWeight: 'bold', marginBottom: '10px' }}>Follow us</h3>
-    <p>Facebook</p>
-    <p>Twitter</p>
-    <p>Instagram</p>
+  <div style={{ display: 'flex', alignItems: 'center', marginBottom: '10px' }}>
+    <img
+      src={emailLogo}
+      alt="Email"
+      style={{ height: '20px', objectFit: 'contain', marginRight: '10px' }}
+    />
+    <span style={{ fontSize: '14px' }}>pykpyk_contact@pyk.com</span>
   </div>
 
+  <div style={{ display: 'flex', alignItems: 'center' }}>
+    <a href="https://google.com/maps/" target='_blank' rel="noopener noreferrer">
+    <img
+      src={googlemapsLogo}
+      alt="GoogleMaps"
+      style={{ height: '20px', objectFit: 'contain', marginRight: '10px' }}
+    />
+    </a>
+    <span style={{ fontSize: '14px' }}>ul. Mikołaja Reja 25, 80-870 Gdańsk</span>
+  </div>
+</div>
+
+
   <div>
-    <h3 style={{ fontWeight: 'bold', marginBottom: '10px' }}>Top categories: Poland</h3>
+    <h3 style={{ fontWeight: 'bold', marginBottom: '10px' }}>Top kategorie</h3>
     <p>Kebab</p>
     <p>Pizza</p>
     <p>Sushi</p>

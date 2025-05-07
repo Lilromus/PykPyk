@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './LoginSignup.css';
 import logo2 from './assets/logo123.png';
-import heroImage from './assets/hero-image.jpg';
+import heroImage from './assets/address-container-animation.webm';
 import ytlogo from './assets/youtube.png';
 import twitterlogo from './assets/twitterlogo.png';
 import facebooklogo from './assets/facebooklogo.png';
@@ -10,19 +10,30 @@ import instagramlogo from './assets/instagramlogo.png';
 import phoneLogo from './assets/phonelogo.png'
 import emailLogo from './assets/email.png'
 import googlemapsLogo from './assets/googlemaps.png'
+import restaurantImg from './assets/restaurants-opt.svg'
+import groceriesImg from './assets/groceries-opt.svg'
+import deliveryImg from './assets/delivery-opt.svg'
+import mcdonalds from './assets/mcdonalds.jpg'
+import biedronka from './assets/biedronka.jpg'
+import kfc from './assets/kfc.jpg'
+import king from './assets/king.jpg'
+import hut from './assets/hut.jpg'
+import salad from './assets/salad.jpg'
+import pasibus from './assets/passibus.jpg'
+import thai from './assets/thai.jpg'
 
 function Home() {
   const navigate = useNavigate();
 
   const brands = [
-    { name: "McDonald's", img: 'mcdonalds.jpg' },
-    { name: "Sklep Internetowy Biedronka", img: 'biedronka.jpg' },
-    { name: "KFC", img: 'kfc.jpg' },
-    { name: "Burger King", img: 'burgerking.jpg' },   //TODO: zdjecia zaokraglone plsss
-    { name: "Pizza Hut", img: 'pizzahut.jpg' },
-    { name: "Salad Story", img: 'saladstory.jpg' },
-    { name: "Pasibus", img: 'pasibus.jpg' },
-    { name: "Thai Wok", img: 'thaiwok.jpg' }
+    { name: "McDonald's", img: mcdonalds },
+    { name: "Biedronka", img: biedronka },
+    { name: "KFC", img: kfc },
+    { name: "Burger King", img: king },
+    { name: "Pizza Hut", img: hut },
+    { name: "Salad Story", img: salad },
+    { name: "Pasibus", img: pasibus },
+    { name: "Thai Wok", img: thai },
   ];
 
   const highlight = {
@@ -100,11 +111,14 @@ function Home() {
         gap: '40px',
         minHeight: '70vh'
       }}>
-        <img
+        <video
           src={heroImage}
-          alt="Hero"
+          autoPlay
+          muted
+          loop
+          playsInline
           style={{
-            width: '300px',
+            width: '400px',
             height: 'auto',
             borderRadius: '20px',
             objectFit: 'cover'
@@ -142,7 +156,7 @@ function Home() {
         marginLeft: 'calc(-50vw + 50%)'
       }}>
         <h2 style={{
-          fontSize: '32px',
+          fontSize: '46px',
           fontWeight: 'bold',
           marginBottom: '40px'
         }}>
@@ -161,24 +175,22 @@ function Home() {
           {brands.map((item, index) => (
             <div key={index} style={{ textAlign: 'center', width: '140px' }}>
               <img
-                src={`/assets/${item.img}`}
+                src={item.img}
                 alt={item.name}
+                className="custom-mask"
                 style={{
-                  width: '120px',
-                  height: '120px',
-                  borderRadius: '50%',
-                  objectFit: 'cover',
-                  marginBottom: '10px'
+                  width: '130px',
+                  height: '130px',
+                  objectFit: 'cover'
                 }}
               />
               <div style={{
                 backgroundColor: '#fcbf3d',
                 borderRadius: '8px',
-                padding: '5px 10px',
-                fontWeight: '500',
-                fontSize: '14px'
+                marginBottom: 30,
+                height: 25
               }}>
-                {item.name}
+                <h3>{item.name}</h3>
               </div>
             </div>
           ))}
@@ -216,21 +228,21 @@ function Home() {
         }}>
           {[
             {
-              img: '/assets/delivery1.png',
+              img: restaurantImg,
               title: 'Popularne restauracje w Twoim mieście', //TODO: tu tez jakis zdjecia plsss
               text: <>
                 Dzięki szerokiej ofercie restauracji możesz zamówić ulubione jedzenie lub <span style={highlight}>sprawdzić nowe miejsca w okolicy.</span>
               </>
             },
             {
-              img: '/assets/delivery2.png',
+              img: deliveryImg,
               title: 'Szybka dostawa',
               text: <>
                 Jak błyskawica! Zamów lub wyślij dowolny artykuł w swoim mieście, <span style={highlight}>a my go szybko dostarczymy.</span>
               </>
             },
             {
-              img: '/assets/delivery3.png',
+              img: groceriesImg,
               title: 'Dostawa artykułów spożywczych i nie tylko',
               text: <>
                 U nas znajdziesz wszystko! <span style={highlight}>Od supermarketów po sklepy, apteki i kwiaciarnie</span> – jeśli punkt działa w Twoim mieście, złóż zamówienie, a my zajmiemy się dostawą.

@@ -7,6 +7,7 @@ body, html {
     justify-content: center;
     align-items: center;
     height: 100vh; 
+    scroll-behavior: smooth;
 }
 
   
@@ -30,6 +31,27 @@ body, html {
     text-align: center;
     max-height: 90vh;
     overflow:hidden;
+}
+
+select {
+    margin-top: 10px;
+    width: 90%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    color: grey;
+    appearance: none; 
+    background-image: url("data:image/svg+xml;utf8,<svg fill='gray' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 18px;
+}
+
+select:focus {
+    outline: none;
+    border: 1px solid #FFA500;
 }
 
 /* Nawigacja w górnym pasku */

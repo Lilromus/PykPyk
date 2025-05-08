@@ -63,10 +63,11 @@ function Home() {
         </div>
 
         <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
-          <span className="nav-link">O nas</span>
-          <span className="nav-link">Kontakt</span>
-          <span className="nav-link" onClick={() => navigate('/kurier')}>Zostań Kurierem</span>
-          <span className="nav-link">Partnerzy</span>
+            <a href="#onas" className="nav-link">O nas</a>
+            <a href="#kontakt" className="nav-link">Kontakt</a>
+            <a href="#dostawa" className="nav-link">Dostawa</a>
+            <a href="#partnerzy" className="nav-link">Partnerzy</a>
+
 
           <button
             onClick={() => navigate('/login')}
@@ -105,7 +106,7 @@ function Home() {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        paddingTop: '2150px',
+        paddingTop: '2350px',
         paddingLeft: '50px',
         paddingRight: '50px',
         gap: '40px',
@@ -145,7 +146,7 @@ function Home() {
         </div>
       </div>
       </header>
-
+      <section id="partnerzy">
       {/* Sekcja restauracji */}
       <div style={{
         backgroundColor: 'white',
@@ -202,8 +203,11 @@ function Home() {
           </button>
         </div>
       </div>
+      </section>
 
       {/* Sekcja - Dostarczamy wszystko */}
+
+      <section id="dostawa">
       <div style={{
         backgroundColor: '#fff',
         width: '100vw',
@@ -257,10 +261,13 @@ function Home() {
           ))}
         </div>
 
-        <button id='bombaclat'>
-          Sprawdź okoliczne punkty
+        <button id='bombaclat' onClick={() => navigate('/Kurier')}>
+          Zostań naszym kurierem
         </button>
       </div>
+      </section>
+
+
       {/* Miasta */}
       <div style={{
         padding: '60px 20px',
@@ -329,6 +336,7 @@ function Home() {
       </div>
 
       {/* O nas */}
+      <section id='onas'>
       <div style={{
         backgroundColor: '#fff',
         padding: '80px 20px',
@@ -352,6 +360,9 @@ function Home() {
           <span style={highlight}>PykPyk to innowacyjna platforma dostaw, która łączy ludzi z lokalnymi restauracjami, sklepami i usługami. Naszą misją jest uproszczenie codziennych zakupów i dostaw dzięki szybkiemu, bezpiecznemu i wygodnemu systemowi zamówień. Niezależnie od tego, czy potrzebujesz jedzenia, produktów spożywczych, leków czy prezentu – my to dostarczymy. Działamy z pasją i lokalnym zaangażowaniem, bo wierzymy, że czas to najcenniejsza waluta.</span>
         </p>
       </div>
+      </section>
+
+      <section id="kontakt">
 
       <footer style={{
         backgroundColor: '#1A1A1A',
@@ -428,6 +439,7 @@ function Home() {
     <p>Fish</p>
   </div>
 </footer>
+</section>
 
     </div>
 

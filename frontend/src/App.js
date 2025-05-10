@@ -5,7 +5,7 @@ import Signup from './Signup.jsx';
 import Kurier from './Kurier.jsx';
 import Partner from './Partner.jsx';
 import Home from './Home.jsx';
-import './LoginSignup.css';
+import Home_logged from './Home_logged.jsx';
 
 
 function App() {
@@ -17,6 +17,7 @@ function App() {
                 <Route path="/login" element={<Login />} />
                 <Route path="/kurier" element={<Kurier />} />
                 <Route path="/partner" element={<Partner />} />
+                <Route path="/home_logged" element={<Home_logged />} />
             </Routes>
         </BrowserRouter>
     );

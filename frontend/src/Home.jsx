@@ -402,8 +402,7 @@ function Home() {
     <img
       src={phoneLogo}
       alt="Phone"
-      style={{ height: '20px', objectFit: 'contain', marginRight: '10px' }}
-    />
+      style={{ height: '20px', objectFit: 'contain', marginRight: '10px' }}/>
     <span style={{ fontSize: '14px' }}>+48 123 456 789</span>
   </div>
 
@@ -411,8 +410,7 @@ function Home() {
     <img
       src={emailLogo}
       alt="Email"
-      style={{ height: '20px', objectFit: 'contain', marginRight: '10px' }}
-    />
+      style={{ height: '20px', objectFit: 'contain', marginRight: '10px' }}/>
     <span style={{ fontSize: '14px' }}>pykpyk_contact@pyk.com</span>
   </div>
 
@@ -421,8 +419,7 @@ function Home() {
     <img
       src={googlemapsLogo}
       alt="GoogleMaps"
-      style={{ height: '20px', objectFit: 'contain', marginRight: '10px' }}
-    />
+      style={{ height: '20px', objectFit: 'contain', marginRight: '10px' }}/>
     </a>
     <span style={{ fontSize: '14px' }}>ul. Mikołaja Reja 25, 80-870 Gdańsk</span>
   </div>

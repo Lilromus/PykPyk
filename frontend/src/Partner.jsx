@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import background from './assets/background.jpg';
+import background from './assets/background.jpg'; 
 
 function Partner() {
   const [imie, setImie] = useState('');
   const [nazwisko, setNazwisko] = useState('');
   const [firma, setFirma] = useState('');
   const [typDzialalnosci, setTypDzialalnosci] = useState('');
+  const [Miasto, setMiasto] = useState('');
+  const [adres, setAdres] = useState('');
   const [telefon, setTelefon] = useState('');
   const [email, setEmail] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
@@ -29,6 +31,10 @@ function Partner() {
       setErrorMessage('Wprowadź poprawny adres e-mail.');
       return;
     }
+    if (!/^ul\.\s?[A-ZŁŚŻŹ][a-ząćęłńóśźż]+(\s[A-ZŁŚŻŹa-ząćęłńóśźż]+)*\s\d{1,3}$/.test(adres)) {
+        setErrorMessage('Adres powinien być w formacie: ul. Nazwa 123');
+        return;
+      }
 
     setErrorMessage('');
     setTimeout(() => {
@@ -94,10 +100,39 @@ function Partner() {
               <option value="sklep">Sklep spożywczy</option>
             </select>
           </div>
+
+          <div className="form-group">
+            <select
+              value={Miasto}
+              onChange={(e) => setMiasto(e.target.value)}
+              style={{ padding: '8px', fontSize: '14px', ...inputStyle(Miasto) }}>
+              <option value="">Wybierz miasto</option>
+              <option value="warszawa">Warszawa</option>
+              <option value="gdansk">Gdańsk</option>
+              <option value="krakow">Kraków</option>
+              <option value="wroclaw">Wrocław</option>
+              <option value="lodz">Łódź</option>
+              <option value="poznan">Poznań</option>
+              <option value="katowice">Katowice</option>
+              <option value="bydgoszcz">Bydgoszcz</option>
+              <option value="szczecin">Szczecin</option>
+              <option value="lublin">Lublin</option>
+            </select>
+          </div>
+
+          <div className="form-group">
+            <input
+                type="text"
+                placeholder="Adres (np. ul. Mickiewicza 1)"
+                value={adres}
+                onChange={(e) => setAdres(e.target.value)}
+                style={inputStyle(adres)}/>
+            </div>
+
           <div className="form-group">
             <input
               type="tel"
-              placeholder="Telefon służbowy"
+              placeholder="Telefon służbowy"    //TODO: dorobic formatowanie telefonu sluzbowego
               value={telefon}
               onChange={(e) => setTelefon(e.target.value)}
               style={inputStyle(telefon)}/>

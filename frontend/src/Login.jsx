@@ -26,7 +26,7 @@ function Login() {
 
           
             setTimeout(() => {
-                navigate('/');
+                navigate('/home_logged');
             }, 1000);
         } else {
             setErrorMessage('Nieprawidłowy login lub hasło.');

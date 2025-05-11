@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, sans-serif;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .edit-profile-container {
+    width: 100%;
+    max-width: 800px;  /* lub więcej, jeśli chcesz szersze pole */
+    margin: 100px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #111;
+  }
+  
+  .edit-header h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    text-align: left;
+  }
+  
+  .edit-field {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .edit-field label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    text-align: left;
+  }
+  
+  .edit-field input {
+    width: 100%;
+    padding: 8px 12px;          
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+  
+  .edit-field input:focus {
+    outline: none;
+    border-color: #efb541;
+  }
+  
+  .save-button {
+    margin-top: 30px;
+    background-color: #008362;
+    color: white;
+    border: none;
+    padding: 14px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .save-button:hover {
+    background-color: #007254;
+  }
+  

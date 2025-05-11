@@ -5,8 +5,8 @@ import Signup from './Signup.jsx';
 import Kurier from './Kurier.jsx';
 import Partner from './Partner.jsx';
 import Home from './Home.jsx';
-import Home_logged from './Home_logged.jsx';
-
+import HomeLogged from './Home_logged';
+import EditProfile from './Edit_profile';
 
 function App() {
     return (
@@ -17,7 +17,8 @@ function App() {
                 <Route path="/login" element={<Login />} />
                 <Route path="/kurier" element={<Kurier />} />
                 <Route path="/partner" element={<Partner />} />
-                <Route path="/home" element={<Home_logged />} />
+                <Route path="/home" element={<HomeLogged />} />
+                <Route path="/editprofile" element={<EditProfile />} />
             </Routes>
         </BrowserRouter>
     );

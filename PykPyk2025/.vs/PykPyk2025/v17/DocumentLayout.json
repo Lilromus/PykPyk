@@ -3,20 +3,60 @@
   "WorkspaceRootPath": "C:\\Users\\Victor\\Documents\\PykPyk\\PykPyk2025\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DCBF835B-AC83-46B6-BDAB-C18CBB371E62}|PykPyk2025\\pykpyk2025.esproj|c:\\users\\victor\\documents\\pykpyk\\pykpyk2025\\pykpyk2025\\src\\login.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{DCBF835B-AC83-46B6-BDAB-C18CBB371E62}|PykPyk2025\\pykpyk2025.esproj|solutionrelative:pykpyk2025\\src\\login.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DCBF835B-AC83-46B6-BDAB-C18CBB371E62}|PykPyk2025\\pykpyk2025.esproj|c:\\users\\victor\\documents\\pykpyk\\pykpyk2025\\pykpyk2025\\src\\home_logged.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{DCBF835B-AC83-46B6-BDAB-C18CBB371E62}|PykPyk2025\\pykpyk2025.esproj|solutionrelative:pykpyk2025\\src\\home_logged.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCBF835B-AC83-46B6-BDAB-C18CBB371E62}|PykPyk2025\\pykpyk2025.esproj|c:\\users\\victor\\documents\\pykpyk\\pykpyk2025\\pykpyk2025\\src\\edit_profile.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{DCBF835B-AC83-46B6-BDAB-C18CBB371E62}|PykPyk2025\\pykpyk2025.esproj|solutionrelative:pykpyk2025\\src\\edit_profile.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCBF835B-AC83-46B6-BDAB-C18CBB371E62}|PykPyk2025\\pykpyk2025.esproj|c:\\users\\victor\\documents\\pykpyk\\pykpyk2025\\pykpyk2025\\src\\editprofile.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{DCBF835B-AC83-46B6-BDAB-C18CBB371E62}|PykPyk2025\\pykpyk2025.esproj|solutionrelative:pykpyk2025\\src\\editprofile.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DCBF835B-AC83-46B6-BDAB-C18CBB371E62}|PykPyk2025\\pykpyk2025.esproj|c:\\users\\victor\\documents\\pykpyk\\pykpyk2025\\pykpyk2025\\src\\app.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{DCBF835B-AC83-46B6-BDAB-C18CBB371E62}|PykPyk2025\\pykpyk2025.esproj|solutionrelative:pykpyk2025\\src\\app.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DCBF835B-AC83-46B6-BDAB-C18CBB371E62}|PykPyk2025\\pykpyk2025.esproj|c:\\users\\victor\\documents\\pykpyk\\pykpyk2025\\pykpyk2025\\src\\edit_profile.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{DCBF835B-AC83-46B6-BDAB-C18CBB371E62}|PykPyk2025\\pykpyk2025.esproj|solutionrelative:pykpyk2025\\src\\edit_profile.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{DCBF835B-AC83-46B6-BDAB-C18CBB371E62}|PykPyk2025\\pykpyk2025.esproj|c:\\users\\victor\\documents\\pykpyk\\pykpyk2025\\pykpyk2025\\.vscode\\launch.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DCBF835B-AC83-46B6-BDAB-C18CBB371E62}|PykPyk2025\\pykpyk2025.esproj|solutionrelative:pykpyk2025\\.vscode\\launch.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCBF835B-AC83-46B6-BDAB-C18CBB371E62}|PykPyk2025\\pykpyk2025.esproj|c:\\users\\victor\\documents\\pykpyk\\pykpyk2025\\pykpyk2025\\pykpyk2025.esproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{DCBF835B-AC83-46B6-BDAB-C18CBB371E62}|PykPyk2025\\pykpyk2025.esproj|solutionrelative:pykpyk2025\\pykpyk2025.esproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCBF835B-AC83-46B6-BDAB-C18CBB371E62}|PykPyk2025\\pykpyk2025.esproj|c:\\users\\victor\\documents\\pykpyk\\pykpyk2025\\pykpyk2025\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DCBF835B-AC83-46B6-BDAB-C18CBB371E62}|PykPyk2025\\pykpyk2025.esproj|solutionrelative:pykpyk2025\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCBF835B-AC83-46B6-BDAB-C18CBB371E62}|PykPyk2025\\pykpyk2025.esproj|c:\\users\\victor\\documents\\pykpyk\\pykpyk2025\\pykpyk2025\\src\\home.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{DCBF835B-AC83-46B6-BDAB-C18CBB371E62}|PykPyk2025\\pykpyk2025.esproj|solutionrelative:pykpyk2025\\src\\home.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCBF835B-AC83-46B6-BDAB-C18CBB371E62}|PykPyk2025\\pykpyk2025.esproj|c:\\users\\victor\\documents\\pykpyk\\pykpyk2025\\pykpyk2025\\public\\favicon.ico||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{DCBF835B-AC83-46B6-BDAB-C18CBB371E62}|PykPyk2025\\pykpyk2025.esproj|solutionrelative:pykpyk2025\\public\\favicon.ico||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCBF835B-AC83-46B6-BDAB-C18CBB371E62}|PykPyk2025\\pykpyk2025.esproj|c:\\users\\victor\\documents\\pykpyk\\pykpyk2025\\pykpyk2025\\public\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DCBF835B-AC83-46B6-BDAB-C18CBB371E62}|PykPyk2025\\pykpyk2025.esproj|solutionrelative:pykpyk2025\\public\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCBF835B-AC83-46B6-BDAB-C18CBB371E62}|PykPyk2025\\pykpyk2025.esproj|c:\\users\\victor\\documents\\pykpyk\\pykpyk2025\\pykpyk2025\\public\\logo192.png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{DCBF835B-AC83-46B6-BDAB-C18CBB371E62}|PykPyk2025\\pykpyk2025.esproj|solutionrelative:pykpyk2025\\public\\logo192.png||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCBF835B-AC83-46B6-BDAB-C18CBB371E62}|PykPyk2025\\pykpyk2025.esproj|c:\\users\\victor\\documents\\pykpyk\\pykpyk2025\\pykpyk2025\\public\\manifest.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DCBF835B-AC83-46B6-BDAB-C18CBB371E62}|PykPyk2025\\pykpyk2025.esproj|solutionrelative:pykpyk2025\\public\\manifest.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCBF835B-AC83-46B6-BDAB-C18CBB371E62}|PykPyk2025\\pykpyk2025.esproj|c:\\users\\victor\\documents\\pykpyk\\pykpyk2025\\pykpyk2025\\public\\robots.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{DCBF835B-AC83-46B6-BDAB-C18CBB371E62}|PykPyk2025\\pykpyk2025.esproj|solutionrelative:pykpyk2025\\public\\robots.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCBF835B-AC83-46B6-BDAB-C18CBB371E62}|PykPyk2025\\pykpyk2025.esproj|c:\\users\\victor\\documents\\pykpyk\\pykpyk2025\\pykpyk2025\\src\\login.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{DCBF835B-AC83-46B6-BDAB-C18CBB371E62}|PykPyk2025\\pykpyk2025.esproj|solutionrelative:pykpyk2025\\src\\login.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +66,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,7 +74,130 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "EditProfile.css",
+              "DocumentMoniker": "C:\\Users\\Victor\\Documents\\PykPyk\\PykPyk2025\\pykpyk2025\\src\\EditProfile.css",
+              "RelativeDocumentMoniker": "pykpyk2025\\src\\EditProfile.css",
+              "ToolTip": "C:\\Users\\Victor\\Documents\\PykPyk\\PykPyk2025\\pykpyk2025\\src\\EditProfile.css",
+              "RelativeToolTip": "pykpyk2025\\src\\EditProfile.css",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-05-11T15:56:17.7Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "launch.json",
+              "DocumentMoniker": "C:\\Users\\Victor\\Documents\\PykPyk\\PykPyk2025\\pykpyk2025\\.vscode\\launch.json",
+              "RelativeDocumentMoniker": "pykpyk2025\\.vscode\\launch.json",
+              "ToolTip": "C:\\Users\\Victor\\Documents\\PykPyk\\PykPyk2025\\pykpyk2025\\.vscode\\launch.json",
+              "RelativeToolTip": "pykpyk2025\\.vscode\\launch.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-11T15:51:30.532Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "pykpyk2025.esproj",
+              "DocumentMoniker": "C:\\Users\\Victor\\Documents\\PykPyk\\PykPyk2025\\PykPyk2025\\pykpyk2025.esproj",
+              "RelativeDocumentMoniker": "PykPyk2025\\pykpyk2025.esproj",
+              "ToolTip": "C:\\Users\\Victor\\Documents\\PykPyk\\PykPyk2025\\PykPyk2025\\pykpyk2025.esproj",
+              "RelativeToolTip": "PykPyk2025\\pykpyk2025.esproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-05-11T15:44:11.803Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "package.json",
+              "DocumentMoniker": "C:\\Users\\Victor\\Documents\\PykPyk\\PykPyk2025\\pykpyk2025\\package.json",
+              "RelativeDocumentMoniker": "pykpyk2025\\package.json",
+              "ToolTip": "C:\\Users\\Victor\\Documents\\PykPyk\\PykPyk2025\\pykpyk2025\\package.json",
+              "RelativeToolTip": "pykpyk2025\\package.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-11T15:45:29.266Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Home.jsx",
+              "DocumentMoniker": "C:\\Users\\Victor\\Documents\\PykPyk\\PykPyk2025\\pykpyk2025\\src\\Home.jsx",
+              "RelativeDocumentMoniker": "pykpyk2025\\src\\Home.jsx",
+              "ToolTip": "C:\\Users\\Victor\\Documents\\PykPyk\\PykPyk2025\\pykpyk2025\\src\\Home.jsx",
+              "RelativeToolTip": "pykpyk2025\\src\\Home.jsx",
+              "ViewState": "AgIAAAoBAAAAAAAAAAAQwA8BAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-05-11T15:43:27.285Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "favicon.ico - Icon [16x16, 32-\u0440\u0430\u0437\u0440\u044F\u0434\u043D\u043E\u0435, PNG]",
+              "DocumentMoniker": "C:\\Users\\Victor\\Documents\\PykPyk\\PykPyk2025\\pykpyk2025\\public\\favicon.ico",
+              "RelativeDocumentMoniker": "pykpyk2025\\public\\favicon.ico",
+              "ToolTip": "C:\\Users\\Victor\\Documents\\PykPyk\\PykPyk2025\\pykpyk2025\\public\\favicon.ico - Icon [16x16, 32-\u0440\u0430\u0437\u0440\u044F\u0434\u043D\u043E\u0435, PNG]",
+              "RelativeToolTip": "pykpyk2025\\public\\favicon.ico - Icon [16x16, 32-\u0440\u0430\u0437\u0440\u044F\u0434\u043D\u043E\u0435, PNG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001525|",
+              "WhenOpened": "2025-05-11T15:43:18.998Z",
+              "EditorCaption": " - Icon [16x16, 32-\u0440\u0430\u0437\u0440\u044F\u0434\u043D\u043E\u0435, PNG]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\Victor\\Documents\\PykPyk\\PykPyk2025\\pykpyk2025\\public\\index.html",
+              "RelativeDocumentMoniker": "pykpyk2025\\public\\index.html",
+              "ToolTip": "C:\\Users\\Victor\\Documents\\PykPyk\\PykPyk2025\\pykpyk2025\\public\\index.html",
+              "RelativeToolTip": "pykpyk2025\\public\\index.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-05-11T15:43:15.337Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "logo192.png - PNG [192x192, 32-\u0440\u0430\u0437\u0440\u044F\u0434\u043D\u043E\u0435, PNG]",
+              "DocumentMoniker": "C:\\Users\\Victor\\Documents\\PykPyk\\PykPyk2025\\pykpyk2025\\public\\logo192.png",
+              "RelativeDocumentMoniker": "pykpyk2025\\public\\logo192.png",
+              "ToolTip": "C:\\Users\\Victor\\Documents\\PykPyk\\PykPyk2025\\pykpyk2025\\public\\logo192.png - PNG [192x192, 32-\u0440\u0430\u0437\u0440\u044F\u0434\u043D\u043E\u0435, PNG]",
+              "RelativeToolTip": "pykpyk2025\\public\\logo192.png - PNG [192x192, 32-\u0440\u0430\u0437\u0440\u044F\u0434\u043D\u043E\u0435, PNG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2025-05-11T15:43:14.115Z",
+              "EditorCaption": " - PNG [192x192, 32-\u0440\u0430\u0437\u0440\u044F\u0434\u043D\u043E\u0435, PNG]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "manifest.json",
+              "DocumentMoniker": "C:\\Users\\Victor\\Documents\\PykPyk\\PykPyk2025\\pykpyk2025\\public\\manifest.json",
+              "RelativeDocumentMoniker": "pykpyk2025\\public\\manifest.json",
+              "ToolTip": "C:\\Users\\Victor\\Documents\\PykPyk\\PykPyk2025\\pykpyk2025\\public\\manifest.json",
+              "RelativeToolTip": "pykpyk2025\\public\\manifest.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-11T15:43:12.399Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "robots.txt",
+              "DocumentMoniker": "C:\\Users\\Victor\\Documents\\PykPyk\\PykPyk2025\\pykpyk2025\\public\\robots.txt",
+              "RelativeDocumentMoniker": "pykpyk2025\\public\\robots.txt",
+              "ToolTip": "C:\\Users\\Victor\\Documents\\PykPyk\\PykPyk2025\\pykpyk2025\\public\\robots.txt",
+              "RelativeToolTip": "pykpyk2025\\public\\robots.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-05-11T15:43:08.98Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "Login.jsx",
               "DocumentMoniker": "C:\\Users\\Victor\\Documents\\PykPyk\\PykPyk2025\\pykpyk2025\\src\\Login.jsx",
               "RelativeDocumentMoniker": "pykpyk2025\\src\\Login.jsx",
@@ -42,44 +205,43 @@
               "RelativeToolTip": "pykpyk2025\\src\\Login.jsx",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAGIAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-05-11T15:33:19.944Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-11T15:33:19.944Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Home_logged.jsx",
               "DocumentMoniker": "C:\\Users\\Victor\\Documents\\PykPyk\\PykPyk2025\\pykpyk2025\\src\\Home_logged.jsx",
               "RelativeDocumentMoniker": "pykpyk2025\\src\\Home_logged.jsx",
               "ToolTip": "C:\\Users\\Victor\\Documents\\PykPyk\\PykPyk2025\\pykpyk2025\\src\\Home_logged.jsx",
               "RelativeToolTip": "pykpyk2025\\src\\Home_logged.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAswH0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
               "WhenOpened": "2025-05-11T15:16:31.835Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "App.jsx",
               "DocumentMoniker": "C:\\Users\\Victor\\Documents\\PykPyk\\PykPyk2025\\pykpyk2025\\src\\App.jsx",
               "RelativeDocumentMoniker": "pykpyk2025\\src\\App.jsx",
               "ToolTip": "C:\\Users\\Victor\\Documents\\PykPyk\\PykPyk2025\\pykpyk2025\\src\\App.jsx",
               "RelativeToolTip": "pykpyk2025\\src\\App.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
               "WhenOpened": "2025-05-11T15:16:29.567Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Edit_profile.jsx",
               "DocumentMoniker": "C:\\Users\\Victor\\Documents\\PykPyk\\PykPyk2025\\pykpyk2025\\src\\Edit_profile.jsx",
               "RelativeDocumentMoniker": "pykpyk2025\\src\\Edit_profile.jsx",
               "ToolTip": "C:\\Users\\Victor\\Documents\\PykPyk\\PykPyk2025\\pykpyk2025\\src\\Edit_profile.jsx",
               "RelativeToolTip": "pykpyk2025\\src\\Edit_profile.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACgAAAAAAAAAAAAswJEAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
               "WhenOpened": "2025-05-11T15:16:27.119Z",
               "EditorCaption": ""

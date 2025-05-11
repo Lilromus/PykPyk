@@ -1,10 +1,11 @@
+
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './LoginSignup.css';
 import logo2 from './assets/logo123.png';
 import userIcon from './assets/userIcon.png';
 
-function Home_logged() {
+function HomeLogged() {
     const navigate = useNavigate();
     const [dropdownVisible, setDropdownVisible] = useState(false);
 
@@ -49,8 +50,7 @@ function Home_logged() {
                                 padding: '6px 12px',
                                 borderRadius: '999px',
                             }}
-                            onClick={toggleDropdown}
-                        >
+                            onClick={toggleDropdown}>
                             <img src={userIcon} alt="User" style={{ height: '24px' }} />
                             <span style={{ color: '#000', fontWeight: 'bold' }}>Admin</span>
                             <svg
@@ -65,8 +65,7 @@ function Home_logged() {
                                 stroke="black"
                                 strokeWidth="2"
                                 strokeLinecap="round"
-                                strokeLinejoin="round"
-                            >
+                                strokeLinejoin="round">
                                 <polyline points="6 9 12 15 18 9" />
                             </svg>
                         </div>
@@ -84,16 +83,14 @@ function Home_logged() {
                                     zIndex: 1000,
                                     minWidth: '150px',
                                     transition: 'opacity 0.2s ease-in-out'
-                                }}
-                            >
+                                }}>
                                 <div
-                                    onClick={() => navigate('/edit-profile')}
+                                    onClick={() => navigate('/editprofile')}
                                     style={{
                                         padding: '10px 15px',
                                         cursor: 'pointer',
                                         color: '#333'
-                                    }}
-                                >
+                                    }}>
                                     Edytuj profil
                                 </div>
                                 <div
@@ -103,8 +100,7 @@ function Home_logged() {
                                         cursor: 'pointer',
                                         borderTop: '1px solid #eee',
                                         color: '#e53935'
-                                    }}
-                                >
+                                    }}>
                                     Wyloguj się
                                 </div>
                             </div>
@@ -126,4 +122,4 @@ function Home_logged() {
     );
 }
 
-export default Home_logged;
+export default HomeLogged;

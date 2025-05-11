@@ -12,19 +12,19 @@ function Login() {
     const handleLogin = (e) => {
         e.preventDefault();
 
-       
+
         if (login === '' || password === '') {
             setErrorMessage('Proszę wprowadzić login i hasło.');
             setValid(false);
             return;
         }
 
-       
+
         if (login === 'Admin' && password === 'Owca') {
             setErrorMessage('');
             setValid(true);
 
-          
+
             setTimeout(() => {
                 navigate('/home');
             }, 1000);
@@ -51,7 +51,7 @@ function Login() {
                 backgroundImage: `url(${background})`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
-                backgroundRepeat: 'no-repeat', 
+                backgroundRepeat: 'no-repeat',
                 height: '100vh',
                 width: '100vw',
                 display: 'flex',
@@ -86,14 +86,14 @@ function Login() {
                     </p>
                     <button type="submit" className="form-button">Zaloguj</button>
                 </form>
-    
+
                 {errorMessage && (
                     <p style={{ color: 'red', marginTop: '10px', fontSize: '14px' }}>{errorMessage}</p>
                 )}
             </div>
         </div>
     );
-    
+
 }
 
 export default Login;

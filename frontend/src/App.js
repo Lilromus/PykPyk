@@ -17,7 +17,7 @@ function App() {
                 <Route path="/login" element={<Login />} />
                 <Route path="/kurier" element={<Kurier />} />
                 <Route path="/partner" element={<Partner />} />
-                <Route path="/home_logged" element={<Home_logged />} />
+                <Route path="/home" element={<Home_logged />} />
             </Routes>
         </BrowserRouter>
     );

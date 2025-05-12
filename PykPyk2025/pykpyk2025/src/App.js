@@ -6,6 +6,7 @@ import Kurier from './Kurier.jsx';
 import Partner from './Partner.jsx';
 import Home from './Home.jsx';
 import Home_logged from './Home_logged.jsx';
+import EditProfile from './Edit_profile.jsx';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
                 <Route path="/kurier" element={<Kurier />} />
                 <Route path="/partner" element={<Partner />} />
                 <Route path="/home" element={<Home_logged />} />
+                <Route path="/editprofile" element={<EditProfile />} />
             </Routes>
         </BrowserRouter>
     );

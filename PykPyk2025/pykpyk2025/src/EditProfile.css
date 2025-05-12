@@ -1,64 +1,139 @@
-﻿body {
-    margin: 0;
-    padding: 0;
-    background-color: rgb(255, 255, 255);
-    font-family: Arial, sans-serif;
-    height: 100%;
-    width: 100%;
-}
-
-.edit-profile-container {
-    width: 100%;
-    max-width: 800px; /* lub więcej, jeśli chcesz szersze pole */
-    margin: 100px auto;
+﻿.edit-profile-page {
+    background-color: white;
+    overflow:hidden;
+    height: 100vh;
+    min-height: 100vh;
+    width: 100vw;
+    padding-top: 80px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar {
+    width: 100vw;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    box-sizing: border-box;
+  }
+  
+  
+  .logo {
+    height: 55px;
+  }
+  
+  .user-menu {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 12px;
+    border-radius: 999px;
+    background: white;
+    border: 2px solid #efb541;
+    cursor: pointer;
+    position: relative;
+    font-weight: bold;
+  }
+  
+  .user-icon {
+    height: 24px;
+  }
+  
+  .arrow {
+    width: 14px;
+    height: 14px;
+    transition: transform 0.3s;
+  }
+  
+  .arrow.open {
+    transform: rotate(180deg);
+  }
+  
+  .dropdown {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+    min-width: 130px;
+    z-index: 10;
+    overflow: hidden;
+  }
+  
+  .dropdown div {
+    padding: 14px 18px;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .dropdown div:hover {
+    background: #f5f5f5;
+  }
+  
+  .dropdown div:last-child {
+    color: #e53935;
+    border-top: 1px solid #eee;
+    background: white;
+  }
+  
+  .dropdown div:last-child:hover {
+    background-color: #fdeaea;
+  }
+  
+  
+  
+  
+  .edit-profile-container {
+    max-width: 600px;
+    margin: 120px auto 0;
     padding: 20px;
-    font-family: Arial, sans-serif;
-    color: #111;
-}
-
-.edit-header h2 {
-    font-size: 28px;
-    margin-bottom: 30px;
-    text-align: left;
-}
-
-.edit-field {
+  }
+  
+  .edit-field {
     margin-bottom: 20px;
+  }
+  
+  .edit-field label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .edit-field input {
     width: 100%;
-}
-
-    .edit-field label {
-        font-weight: bold;
-        margin-bottom: 5px;
-        display: block;
-        text-align: left;
-    }
-
-    .edit-field input {
-        width: 100%;
-        padding: 8px 12px;
-        font-size: 15px;
-        border: 1px solid #ccc;
-        border-radius: 8px;
-        box-sizing: border-box;
-    }
-
-        .edit-field input:focus {
-            outline: none;
-            border-color: #efb541;
-        }
-
-.save-button {
-    margin-top: 30px;
-    background-color: #008362;
+    padding: 8px 12px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+  
+  .edit-field input:focus {
+    outline: none;
+    border-color: #efb541;
+  }
+  
+  .save-button {
+    background: #008362;
     color: white;
     border: none;
-    padding: 14px 24px;
+    padding: 12px 24px;
     border-radius: 8px;
     cursor: pointer;
     font-size: 16px;
-}
-
-    .save-button:hover {
-        background-color: #007254;
-    }
+  }
+  
+  .save-button:hover {
+    background: #007254;
+  }
+  

@@ -10,12 +10,13 @@
   width: 100%;
   z-index: 1000;
 }
+
 .logo { height: 56px; }
 
 
 .home-logged-page {
   padding-top: 80px;    
-  background-color: #efb541;
+  background-color: #ffffff;
   min-height: 100vh;
 }
 
@@ -108,3 +109,39 @@
   margin-bottom: 16px;
   font-size: 20px;
 }
+
+.main-grid{
+  display: flex;
+  gap:30px;
+  margin-top: 20px;
+}
+
+.filtres-panel{
+  min-width: 200px;
+  padding:20px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+}
+
+.filtres-panel h4{
+  margin-bottom:16px;
+  font-size: 16px;
+  color:#333;
+  border-bottom:1px solid #a8a5a5dd;
+  padding-bottom: 8px;
+}
+
+.filtres-item{
+  padding: 10 12px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border: 1px solid #ffffffdd;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.filtres-item:hover{
+  background-color: #edb957;
+  border-color: #239430;
+}
+

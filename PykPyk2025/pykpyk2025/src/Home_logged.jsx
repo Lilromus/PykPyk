@@ -49,7 +49,6 @@ function HomeLogged() {
         </div>
       </header>
 
-      <main className="home-logged-container">
         <section className="content">
           <div className="search-main">
             <input
@@ -59,7 +58,19 @@ function HomeLogged() {
             />
           </div>
 
-          <h2 className="section-title">All Stores</h2>
+          <h2 className="section-title">Wszystkie restauracje</h2>
+
+        <div className='main-grid'>
+
+          <div className='filtres-panel'>
+            <h4>Popular filtres</h4>
+              <div className="filter-item">American</div>
+              <div className="filter-item">Pizza</div>
+              <div className="filter-item">Asian</div>
+              <div className="filter-item">Kebab</div>
+              <div className="filter-item">Bakery</div>
+              <div className="filter-item">Desserts</div>     
+          </div>
 
           <div className="products-grid">
             {products.map(prod => (
@@ -80,8 +91,8 @@ function HomeLogged() {
               </div>
             ))}
           </div>
+        </div>
         </section>
-      </main>
     </div>
   );
 }

@@ -13,9 +13,11 @@ function HomeLogged() {
   const toggleDropdown = () => setDropdownVisible(v => !v);
 
   const products = [
-    { name: "McDonald's",     img: burger, time: '25-35 min', fee: 'Free', category: 'American'},
-    { name: 'KFC',            img: burger, time: '20-30 min', fee: 'Free', category: 'American'},
-    { name: 'Dooner Kebab', img: burger, time: '30-40 min', fee: 'Free', category: 'Kebab'},
+    { name: "McDonald's",img: burger, time: '25-35 min', fee: 'Free', category: 'American'},
+    { name: 'KFC',img: burger, time: '20-30 min', fee: 'Free', category: 'American'},
+    { name: 'Döner Kebab', img: burger, time: '30-40 min', fee: 'Free', category: 'Kebab'},
+    { name: 'Thai food', img: burger, time: '30-40 min', fee: 'Free', category: 'Asian'},
+    { name: "Domino's Pizza", img: burger, time: '30-40 min', fee: 'Free', category: 'Pizza'},
     // mozna dodac wiecej
   ];
 
@@ -51,11 +53,7 @@ function HomeLogged() {
 
         <section className="content">
           <div className="search-main">
-            <input
-              type="text"
-              className="search-input main-search"
-              placeholder="What can we get you?"
-            />
+            <input type="text" className="search-input main-search" placeholder="What can we get you?"/>
           </div>
 
           <h2 className="section-title">Wszystkie restauracje</h2>
@@ -75,11 +73,7 @@ function HomeLogged() {
           <div className="products-grid">
             {products.map(prod => (
               <div className="product-card" key={prod.name}>
-                <img
-                  src={prod.img}
-                  alt={prod.name}
-                  className="product-image"
-                />
+                <img src={prod.img} alt={prod.name} className="product-image"/>
                 <div className="product-info">
                   <h5 className="product-name">{prod.name}</h5>
                   <p className="product-details">{prod.fee} · {prod.time}</p>

@@ -1,1 +1,2 @@
 C:\Users\Victor\Documents\PykPyk\PykPyk2025\PykPyk2025\obj\Debug\pykpyk2025.esproj.CoreCompileInputs.cache
+C:\Users\Victor\Documents\PykPyk\PykPyk2025\react-app\obj\Debug\pykpyk2025.esproj.CoreCompileInputs.cache

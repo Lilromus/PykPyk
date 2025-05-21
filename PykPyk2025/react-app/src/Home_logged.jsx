@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './Home_log.css';
+import './Home_logged.css';
 import logo2 from './assets/logo123.png';
 import userIcon from './assets/userIcon.png';
 import burger from './assets/burger_test.webp';

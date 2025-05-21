@@ -1,0 +1,385 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Victor\\Documents\\PykPyk\\PykPyk2025\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9275EE8D-701C-4729-86C8-F3AB2489E278}|backend\\backend.csproj|c:\\users\\victor\\documents\\pykpyk\\pykpyk2025\\backend\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9275EE8D-701C-4729-86C8-F3AB2489E278}|backend\\backend.csproj|solutionrelative:backend\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F42B339-8AF5-4838-6235-4B3F108E9C2B}|react-app\\pykpyk2025.esproj|c:\\users\\victor\\documents\\pykpyk\\pykpyk2025\\react-app\\src\\signup.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{4F42B339-8AF5-4838-6235-4B3F108E9C2B}|react-app\\pykpyk2025.esproj|solutionrelative:react-app\\src\\signup.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F42B339-8AF5-4838-6235-4B3F108E9C2B}|react-app\\pykpyk2025.esproj|c:\\users\\victor\\documents\\pykpyk\\pykpyk2025\\react-app\\src\\login.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{4F42B339-8AF5-4838-6235-4B3F108E9C2B}|react-app\\pykpyk2025.esproj|solutionrelative:react-app\\src\\login.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F42B339-8AF5-4838-6235-4B3F108E9C2B}|react-app\\pykpyk2025.esproj|c:\\users\\victor\\documents\\pykpyk\\pykpyk2025\\react-app\\src\\setuptests.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{4F42B339-8AF5-4838-6235-4B3F108E9C2B}|react-app\\pykpyk2025.esproj|solutionrelative:react-app\\src\\setuptests.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F42B339-8AF5-4838-6235-4B3F108E9C2B}|react-app\\pykpyk2025.esproj|c:\\users\\victor\\documents\\pykpyk\\pykpyk2025\\react-app\\src\\reportwebvitals.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{4F42B339-8AF5-4838-6235-4B3F108E9C2B}|react-app\\pykpyk2025.esproj|solutionrelative:react-app\\src\\reportwebvitals.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F42B339-8AF5-4838-6235-4B3F108E9C2B}|react-app\\pykpyk2025.esproj|c:\\users\\victor\\documents\\pykpyk\\pykpyk2025\\react-app\\src\\main.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{4F42B339-8AF5-4838-6235-4B3F108E9C2B}|react-app\\pykpyk2025.esproj|solutionrelative:react-app\\src\\main.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F42B339-8AF5-4838-6235-4B3F108E9C2B}|react-app\\pykpyk2025.esproj|c:\\users\\victor\\documents\\pykpyk\\pykpyk2025\\react-app\\src\\home_logged.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{4F42B339-8AF5-4838-6235-4B3F108E9C2B}|react-app\\pykpyk2025.esproj|solutionrelative:react-app\\src\\home_logged.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F42B339-8AF5-4838-6235-4B3F108E9C2B}|react-app\\pykpyk2025.esproj|c:\\users\\victor\\documents\\pykpyk\\pykpyk2025\\react-app\\src\\home_log.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{4F42B339-8AF5-4838-6235-4B3F108E9C2B}|react-app\\pykpyk2025.esproj|solutionrelative:react-app\\src\\home_log.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F42B339-8AF5-4838-6235-4B3F108E9C2B}|react-app\\pykpyk2025.esproj|c:\\users\\victor\\documents\\pykpyk\\pykpyk2025\\react-app\\src\\app.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{4F42B339-8AF5-4838-6235-4B3F108E9C2B}|react-app\\pykpyk2025.esproj|solutionrelative:react-app\\src\\app.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9275EE8D-701C-4729-86C8-F3AB2489E278}|backend\\backend.csproj|c:\\users\\victor\\documents\\pykpyk\\pykpyk2025\\backend\\models\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9275EE8D-701C-4729-86C8-F3AB2489E278}|backend\\backend.csproj|solutionrelative:backend\\models\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9275EE8D-701C-4729-86C8-F3AB2489E278}|backend\\backend.csproj|c:\\users\\victor\\documents\\pykpyk\\pykpyk2025\\backend\\data\\appdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9275EE8D-701C-4729-86C8-F3AB2489E278}|backend\\backend.csproj|solutionrelative:backend\\data\\appdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9275EE8D-701C-4729-86C8-F3AB2489E278}|backend\\backend.csproj|c:\\users\\victor\\documents\\pykpyk\\pykpyk2025\\backend\\data\\appdbcontext.cs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9275EE8D-701C-4729-86C8-F3AB2489E278}|backend\\backend.csproj|solutionrelative:backend\\data\\appdbcontext.cs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9275EE8D-701C-4729-86C8-F3AB2489E278}|backend\\backend.csproj|c:\\users\\victor\\documents\\pykpyk\\pykpyk2025\\backend\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{9275EE8D-701C-4729-86C8-F3AB2489E278}|backend\\backend.csproj|solutionrelative:backend\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9275EE8D-701C-4729-86C8-F3AB2489E278}|backend\\backend.csproj|c:\\users\\victor\\documents\\pykpyk\\pykpyk2025\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9275EE8D-701C-4729-86C8-F3AB2489E278}|backend\\backend.csproj|solutionrelative:backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9275EE8D-701C-4729-86C8-F3AB2489E278}|backend\\backend.csproj|c:\\users\\victor\\documents\\pykpyk\\pykpyk2025\\backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{9275EE8D-701C-4729-86C8-F3AB2489E278}|backend\\backend.csproj|solutionrelative:backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9275EE8D-701C-4729-86C8-F3AB2489E278}|backend\\backend.csproj|c:\\users\\victor\\documents\\pykpyk\\pykpyk2025\\backend\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9275EE8D-701C-4729-86C8-F3AB2489E278}|backend\\backend.csproj|solutionrelative:backend\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F42B339-8AF5-4838-6235-4B3F108E9C2B}|react-app\\pykpyk2025.esproj|c:\\users\\victor\\documents\\pykpyk\\pykpyk2025\\react-app\\pykpyk2025.esproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{4F42B339-8AF5-4838-6235-4B3F108E9C2B}|react-app\\pykpyk2025.esproj|solutionrelative:react-app\\pykpyk2025.esproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F42B339-8AF5-4838-6235-4B3F108E9C2B}|react-app\\pykpyk2025.esproj|c:\\users\\victor\\documents\\pykpyk\\pykpyk2025\\react-app\\.vscode\\launch.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4F42B339-8AF5-4838-6235-4B3F108E9C2B}|react-app\\pykpyk2025.esproj|solutionrelative:react-app\\.vscode\\launch.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9275EE8D-701C-4729-86C8-F3AB2489E278}|backend\\backend.csproj|c:\\users\\victor\\documents\\pykpyk\\pykpyk2025\\backend\\backend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{9275EE8D-701C-4729-86C8-F3AB2489E278}|backend\\backend.csproj|solutionrelative:backend\\backend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F42B339-8AF5-4838-6235-4B3F108E9C2B}|react-app\\pykpyk2025.esproj|c:\\users\\victor\\documents\\pykpyk\\pykpyk2025\\react-app\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4F42B339-8AF5-4838-6235-4B3F108E9C2B}|react-app\\pykpyk2025.esproj|solutionrelative:react-app\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F42B339-8AF5-4838-6235-4B3F108E9C2B}|react-app\\pykpyk2025.esproj|c:\\users\\victor\\documents\\pykpyk\\pykpyk2025\\react-app\\src\\partner.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{4F42B339-8AF5-4838-6235-4B3F108E9C2B}|react-app\\pykpyk2025.esproj|solutionrelative:react-app\\src\\partner.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 13,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "App.jsx",
+              "DocumentMoniker": "C:\\Users\\Victor\\Documents\\PykPyk\\PykPyk2025\\react-app\\src\\App.jsx",
+              "RelativeDocumentMoniker": "react-app\\src\\App.jsx",
+              "ToolTip": "C:\\Users\\Victor\\Documents\\PykPyk\\PykPyk2025\\react-app\\src\\App.jsx",
+              "RelativeToolTip": "react-app\\src\\App.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-05-21T10:00:49.37Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LoginRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Victor\\Documents\\PykPyk\\PykPyk2025\\backend\\Models\\LoginRequest.cs",
+              "RelativeDocumentMoniker": "backend\\Models\\LoginRequest.cs",
+              "ToolTip": "C:\\Users\\Victor\\Documents\\PykPyk\\PykPyk2025\\backend\\Models\\LoginRequest.cs",
+              "RelativeToolTip": "backend\\Models\\LoginRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T09:54:39.365Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Home_logged.jsx",
+              "DocumentMoniker": "C:\\Users\\Victor\\Documents\\PykPyk\\PykPyk2025\\react-app\\src\\Home_logged.jsx",
+              "RelativeDocumentMoniker": "react-app\\src\\Home_logged.jsx",
+              "ToolTip": "C:\\Users\\Victor\\Documents\\PykPyk\\PykPyk2025\\react-app\\src\\Home_logged.jsx",
+              "RelativeToolTip": "react-app\\src\\Home_logged.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-05-21T09:44:47.583Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Home_log.css",
+              "DocumentMoniker": "C:\\Users\\Victor\\Documents\\PykPyk\\PykPyk2025\\react-app\\src\\Home_log.css",
+              "RelativeDocumentMoniker": "react-app\\src\\Home_log.css",
+              "ToolTip": "C:\\Users\\Victor\\Documents\\PykPyk\\PykPyk2025\\react-app\\src\\Home_log.css",
+              "RelativeToolTip": "react-app\\src\\Home_log.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-05-21T09:46:42.643Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\Victor\\Documents\\PykPyk\\PykPyk2025\\backend\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "backend\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\Victor\\Documents\\PykPyk\\PykPyk2025\\backend\\Properties\\launchSettings.json",
+              "RelativeToolTip": "backend\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB4AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-20T20:19:10.263Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Login.jsx",
+              "DocumentMoniker": "C:\\Users\\Victor\\Documents\\PykPyk\\PykPyk2025\\react-app\\src\\Login.jsx",
+              "RelativeDocumentMoniker": "react-app\\src\\Login.jsx",
+              "ToolTip": "C:\\Users\\Victor\\Documents\\PykPyk\\PykPyk2025\\react-app\\src\\Login.jsx",
+              "RelativeToolTip": "react-app\\src\\Login.jsx",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABoAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-05-20T20:10:52.247Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Partner.jsx",
+              "DocumentMoniker": "C:\\Users\\Victor\\Documents\\PykPyk\\PykPyk2025\\react-app\\src\\Partner.jsx",
+              "RelativeDocumentMoniker": "react-app\\src\\Partner.jsx",
+              "ToolTip": "C:\\Users\\Victor\\Documents\\PykPyk\\PykPyk2025\\react-app\\src\\Partner.jsx",
+              "RelativeToolTip": "react-app\\src\\Partner.jsx",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-05-20T20:10:43.557Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "reportWebVitals.js",
+              "DocumentMoniker": "C:\\Users\\Victor\\Documents\\PykPyk\\PykPyk2025\\react-app\\src\\reportWebVitals.js",
+              "RelativeDocumentMoniker": "react-app\\src\\reportWebVitals.js",
+              "ToolTip": "C:\\Users\\Victor\\Documents\\PykPyk\\PykPyk2025\\react-app\\src\\reportWebVitals.js",
+              "RelativeToolTip": "react-app\\src\\reportWebVitals.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-05-20T20:10:42.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "setupTests.js",
+              "DocumentMoniker": "C:\\Users\\Victor\\Documents\\PykPyk\\PykPyk2025\\react-app\\src\\setupTests.js",
+              "RelativeDocumentMoniker": "react-app\\src\\setupTests.js",
+              "ToolTip": "C:\\Users\\Victor\\Documents\\PykPyk\\PykPyk2025\\react-app\\src\\setupTests.js",
+              "RelativeToolTip": "react-app\\src\\setupTests.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-05-20T20:10:40.902Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Victor\\Documents\\PykPyk\\PykPyk2025\\backend\\appsettings.json",
+              "RelativeDocumentMoniker": "backend\\appsettings.json",
+              "ToolTip": "C:\\Users\\Victor\\Documents\\PykPyk\\PykPyk2025\\backend\\appsettings.json",
+              "RelativeToolTip": "backend\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-20T20:09:07.331Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "backend.csproj",
+              "DocumentMoniker": "C:\\Users\\Victor\\Documents\\PykPyk\\PykPyk2025\\backend\\backend.csproj",
+              "RelativeDocumentMoniker": "backend\\backend.csproj",
+              "ToolTip": "C:\\Users\\Victor\\Documents\\PykPyk\\PykPyk2025\\backend\\backend.csproj",
+              "RelativeToolTip": "backend\\backend.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-20T18:42:44.621Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AppDbContext.cs.cs",
+              "DocumentMoniker": "C:\\Users\\Victor\\Documents\\PykPyk\\PykPyk2025\\backend\\Data\\AppDbContext.cs.cs",
+              "RelativeDocumentMoniker": "backend\\Data\\AppDbContext.cs.cs",
+              "ToolTip": "C:\\Users\\Victor\\Documents\\PykPyk\\PykPyk2025\\backend\\Data\\AppDbContext.cs.cs",
+              "RelativeToolTip": "backend\\Data\\AppDbContext.cs.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T14:04:16.053Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Victor\\Documents\\PykPyk\\PykPyk2025\\backend\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "backend\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Victor\\Documents\\PykPyk\\PykPyk2025\\backend\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "backend\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T14:04:04.017Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Victor\\Documents\\PykPyk\\PykPyk2025\\backend\\Models\\User.cs",
+              "RelativeDocumentMoniker": "backend\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\Victor\\Documents\\PykPyk\\PykPyk2025\\backend\\Models\\User.cs",
+              "RelativeToolTip": "backend\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T14:02:58.793Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Signup.jsx",
+              "DocumentMoniker": "C:\\Users\\Victor\\Documents\\PykPyk\\PykPyk2025\\react-app\\src\\Signup.jsx",
+              "RelativeDocumentMoniker": "react-app\\src\\Signup.jsx",
+              "ToolTip": "C:\\Users\\Victor\\Documents\\PykPyk\\PykPyk2025\\react-app\\src\\Signup.jsx",
+              "RelativeToolTip": "react-app\\src\\Signup.jsx",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwDEAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-05-20T13:56:21.329Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "main.jsx",
+              "DocumentMoniker": "C:\\Users\\Victor\\Documents\\PykPyk\\PykPyk2025\\react-app\\src\\main.jsx",
+              "RelativeDocumentMoniker": "react-app\\src\\main.jsx",
+              "ToolTip": "C:\\Users\\Victor\\Documents\\PykPyk\\PykPyk2025\\react-app\\src\\main.jsx",
+              "RelativeToolTip": "react-app\\src\\main.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-05-20T20:10:47.576Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Microsoft.Common.CurrentVersion.targets",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ViewState": "AgIAAPkUAAAAAAAAAAD4vxIVAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-05-20T20:20:51.385Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AppDbContextFactory.cs",
+              "DocumentMoniker": "C:\\Users\\Victor\\Documents\\PykPyk\\PykPyk2025\\backend\\Data\\AppDbContextFactory.cs",
+              "RelativeDocumentMoniker": "backend\\Data\\AppDbContextFactory.cs",
+              "ToolTip": "C:\\Users\\Victor\\Documents\\PykPyk\\PykPyk2025\\backend\\Data\\AppDbContextFactory.cs",
+              "RelativeToolTip": "backend\\Data\\AppDbContextFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T20:33:48.059Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Victor\\Documents\\PykPyk\\PykPyk2025\\backend\\Program.cs",
+              "RelativeDocumentMoniker": "backend\\Program.cs",
+              "ToolTip": "C:\\Users\\Victor\\Documents\\PykPyk\\PykPyk2025\\backend\\Program.cs",
+              "RelativeToolTip": "backend\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T13:57:40.15Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "launch.json",
+              "DocumentMoniker": "C:\\Users\\Victor\\Documents\\PykPyk\\PykPyk2025\\react-app\\.vscode\\launch.json",
+              "RelativeDocumentMoniker": "react-app\\.vscode\\launch.json",
+              "ToolTip": "C:\\Users\\Victor\\Documents\\PykPyk\\PykPyk2025\\react-app\\.vscode\\launch.json",
+              "RelativeToolTip": "react-app\\.vscode\\launch.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-20T13:51:28.843Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "package.json",
+              "DocumentMoniker": "C:\\Users\\Victor\\Documents\\PykPyk\\PykPyk2025\\react-app\\package.json",
+              "RelativeDocumentMoniker": "react-app\\package.json",
+              "ToolTip": "C:\\Users\\Victor\\Documents\\PykPyk\\PykPyk2025\\react-app\\package.json",
+              "RelativeToolTip": "react-app\\package.json",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-20T13:51:17.022Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "pykpyk2025.esproj",
+              "DocumentMoniker": "C:\\Users\\Victor\\Documents\\PykPyk\\PykPyk2025\\react-app\\pykpyk2025.esproj",
+              "RelativeDocumentMoniker": "react-app\\pykpyk2025.esproj",
+              "ToolTip": "C:\\Users\\Victor\\Documents\\PykPyk\\PykPyk2025\\react-app\\pykpyk2025.esproj",
+              "RelativeToolTip": "react-app\\pykpyk2025.esproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-05-20T13:48:43.401Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

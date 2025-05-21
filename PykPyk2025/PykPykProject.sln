@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "backend", "backend\backend.csproj", "{9275EE8D-701C-4729-86C8-F3AB2489E278}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "pykpyk2025", "react-app\pykpyk2025.esproj", "{4F42B339-8AF5-4838-6235-4B3F108E9C2B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9275EE8D-701C-4729-86C8-F3AB2489E278}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9275EE8D-701C-4729-86C8-F3AB2489E278}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9275EE8D-701C-4729-86C8-F3AB2489E278}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9275EE8D-701C-4729-86C8-F3AB2489E278}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F42B339-8AF5-4838-6235-4B3F108E9C2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F42B339-8AF5-4838-6235-4B3F108E9C2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F42B339-8AF5-4838-6235-4B3F108E9C2B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{4F42B339-8AF5-4838-6235-4B3F108E9C2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F42B339-8AF5-4838-6235-4B3F108E9C2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F42B339-8AF5-4838-6235-4B3F108E9C2B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1041032B-DF74-4209-B146-BD4BF741B257}
+	EndGlobalSection
+EndGlobal

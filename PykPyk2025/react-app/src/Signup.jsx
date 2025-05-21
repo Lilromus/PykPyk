@@ -54,7 +54,7 @@ function Signup() {
                 }
 
                 console.log(data);
-                navigate('/Home_logged');
+                navigate('/home');
             })
             .catch(err => {
                 setErrorMessage(err.message);

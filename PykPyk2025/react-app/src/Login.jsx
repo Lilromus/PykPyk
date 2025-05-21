@@ -36,7 +36,7 @@ function Login() {
                 console.log(data);
                 setErrorMessage('');
                 setValid(true);
-                navigate('/Home_logged');
+                navigate('/home');
             })
             .catch(err => {
                 setErrorMessage(err.message);

@@ -1,17 +1,39 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Home_logged.css';
+
 import logo2 from './assets/logo123.png';
 import userIcon from './assets/userIcon.png';
 import burger from './assets/burger_test.webp';
+
+import americanLogo from './assets/American_section_logo.png'
+import pizzaLogo from './assets/Pizza_section_logo.png'
+import asianLogo from './assets/Asian_section_logo.png'
+import kebabLogo from './assets/Kebabe_section_logo.png'
+import ratingLogo from './assets/Rating_logo.png'
+import searchLogo from './assets/Search_logo.svg'
+
 
 function HomeLogged() {
   const navigate = useNavigate();
   const [dropdownVisible, setDropdownVisible] = useState(false);
 
+  const [selectedFilter, setSelectedFilter] = useState(null);
+
+  const [searchTerm, setSearchTerm] = useState('')
+
   const handleLogout = () => navigate('/');
   const toggleDropdown = () => setDropdownVisible(v => !v);
 
+  //tablica z filtrami
+  const filters = [
+    {label: 'American', icon: americanLogo},
+    {label: 'Pizza', icon: pizzaLogo},
+    {label: 'Asian', icon: asianLogo},
+    {label: 'Kebab', icon: kebabLogo},
+  ];
+
+  //tablica z restauracjami 
   const products = [
     { name: "McDonald's",img: burger, time: '25-35 min', fee: 'Free', category: 'American'},
     { name: 'KFC',img: burger, time: '20-30 min', fee: 'Free', category: 'American'},
@@ -21,8 +43,26 @@ function HomeLogged() {
     // mozna dodac wiecej
   ];
 
+  
+  //działania filtrów 
+  let filteredProducts = products;
+  if(selectedFilter)
+  {
+    filteredProducts = products.filter(p => p.category === selectedFilter); 
+  }
+
+  if(searchTerm.trim() !== '')
+  {
+    filteredProducts = filteredProducts.filter(p =>
+      p.name.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+  }
+
+
+
   return (
     <div className="home-logged-page">
+      {/*Nawigacja*/}
       <header className="navbar">
         <img src={logo2} alt="PykPyk Logo" className="logo" />
 
@@ -34,8 +74,7 @@ function HomeLogged() {
             viewBox="0 0 24 24"
             stroke="black"
             strokeWidth="2"
-            fill="none"
-          >
+            fill="none">
             <polyline points="6 9 12 15 18 9" />
           </svg>
           {dropdownVisible && (
@@ -50,28 +89,43 @@ function HomeLogged() {
           )}
         </div>
       </header>
-
-        <section className="content">
-          <div className="search-main">
-            <input type="text" className="search-input main-search" placeholder="What can we get you?"/>
-          </div>
-
-          <h2 className="section-title">Wszystkie restauracje</h2>
+      {/*Wyszukiwarka*/}
+      <section className="content">
+        <div className="search-main">
+          <img src={searchLogo} className='search-icon' alt='Search'/>
+            <input 
+            type="text" 
+            className="search-input main-search" 
+            placeholder="What can we get you?"
+            value={searchTerm}
+            onChange={e => setSearchTerm(e.target.value)}
+            />
+        </div>
+        {/*TODO: NAPRAWIC WYSZUKIWARKE bo gdy sie wpisuje byle co to strona sie ROZPIERDALA*/}
 
         <div className='main-grid'>
-
+        {/*Filty*/}
           <div className='filtres-panel'>
-            <h4>Popular filtres</h4>
-              <div className="filter-item">American</div>
-              <div className="filter-item">Pizza</div>
-              <div className="filter-item">Asian</div>
-              <div className="filter-item">Kebab</div>
-              <div className="filter-item">Bakery</div>
-              <div className="filter-item">Desserts</div>     
+            <h4>Filtry&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  </h4>
+            {filters.map(f => {
+            const isActive = selectedFilter === f.label;
+            return (
+              <div key={f.label} className={`filter-item${isActive ? ' active' : ''}`} 
+              onClick={() =>
+                setSelectedFilter(prev =>
+                  prev === f.label ? null : f.label
+                )}>
+                <div className={`filter-icon-wrapper${isActive ? ' active' : ''}`}>
+                  <img src={f.icon} alt={`${f.label} icon`} className="filter-icon"/>
+                </div>
+                <span className="filter-label">{f.label}</span>
+              </div>
+            );
+          })} 
           </div>
-
+          {/*Restauracje*/}
           <div className="products-grid">
-            {products.map(prod => (
+            {filteredProducts.map(prod => (
               <div className="product-card" key={prod.name}>
                 <img src={prod.img} alt={prod.name} className="product-image"/>
                 <div className="product-info">

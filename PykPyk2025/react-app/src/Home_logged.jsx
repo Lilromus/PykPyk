@@ -10,8 +10,10 @@ import americanLogo from './assets/American_section_logo.png'
 import pizzaLogo from './assets/Pizza_section_logo.png'
 import asianLogo from './assets/Asian_section_logo.png'
 import kebabLogo from './assets/Kebabe_section_logo.png'
-import ratingLogo from './assets/Rating_logo.png'
 import searchLogo from './assets/Search_logo.svg'
+
+import ratingLogo from './assets/Rating_logo.png'
+import delieveryLogo from './assets/Delievery_logo.svg'
 
 
 function HomeLogged() {
@@ -33,13 +35,18 @@ function HomeLogged() {
     {label: 'Kebab', icon: kebabLogo},
   ];
 
+  const otherLogo = [
+    {label: 'Rating', icon: ratingLogo},
+    {label: 'Delievery', icon: delieveryLogo},
+  ]
+
   //tablica z restauracjami 
   const products = [
-    { name: "McDonald's",img: burger, time: '25-35 min', fee: 'Free', category: 'American'},
-    { name: 'KFC',img: burger, time: '20-30 min', fee: 'Free', category: 'American'},
-    { name: 'Döner Kebab', img: burger, time: '30-40 min', fee: 'Free', category: 'Kebab'},
-    { name: 'Thai food', img: burger, time: '30-40 min', fee: 'Free', category: 'Asian'},
-    { name: "Domino's Pizza", img: burger, time: '30-40 min', fee: 'Free', category: 'Pizza'},
+    { name: "McDonald's",img: burger, time: '25-35 min', fee: '2,99 zł', category: 'American', rating: { percent: '96%', count: 188 }},
+    { name: 'KFC',img: burger, time: '20-30 min', fee: '2,99 zł', category: 'American', rating: { percent: '96%', count: 188 }},
+    { name: 'Döner Kebab', img: burger, time: '30-40 min', fee: '1,99 zł', category: 'Kebab', rating: { percent: '96%', count: 188 }},
+    { name: 'Thai food', img: burger, time: '30-40 min', fee: '4,99 zł', category: 'Asian', rating: { percent: '96%', count: 188 }},
+    { name: "Domino's Pizza", img: burger, time: '30-40 min', fee: '2,99 zł', category: 'Pizza', rating: { percent: '96%', count: 188 }},
     // mozna dodac wiecej
   ];
 
@@ -127,13 +134,20 @@ function HomeLogged() {
           <div className="products-grid">
             {filteredProducts.map(prod => (
               <div className="product-card" key={prod.name}>
+                <div className='product-image-wrapper'>
                 <img src={prod.img} alt={prod.name} className="product-image"/>
+
+                <div className='rating-badge'>
+                  <img src={ratingLogo} alt='Rating' className='rating-icon'/>
+                    <span className='rating-percent'>{prod.rating.percent}</span>
+                    <span className="rating-count">({prod.rating.count})</span>
+                  </div>
+                </div>
                 <div className="product-info">
                   <h5 className="product-name">{prod.name}</h5>
-                  <p className="product-details">{prod.fee} · {prod.time}</p>
+                  <p className="product-details"><img src={delieveryLogo} alt="Delievery" className='delievery-icon'/> {prod.fee} {prod.time}</p>
                   <div className="product-meta">
                     <span className="category">{prod.category}</span>
-                    <span className="rating">{prod.rating}</span>
                   </div>
                 </div>
               </div>

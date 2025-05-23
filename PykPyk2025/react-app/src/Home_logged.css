@@ -234,3 +234,48 @@
 .filter-icon-wrapper.active {
   background-color: #f3d598;
 }
+
+
+.delivery-icon{
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  margin-right:10px;
+  margin-top: 5px;
+}
+
+.product-image-wrapper{
+  position: relative;
+  
+}
+
+.rating-badge{
+  padding: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: #ffff ;
+  border-radius: 16px;
+  box-shadow: 0 2px 6px rgba(0,0,0, 0.1);
+  padding: 4px 8px;
+  display:flex;
+  align-items: center;
+  width: 80px;
+}
+
+.rating-icon{
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+}
+
+.rating-percet{
+  font-size: 12px;
+  font-weight: 600;
+  color:#333;
+}
+
+.rating-count{
+  font-size: 12px;
+  color:#777;
+  margin-left: 4px;
+}

@@ -364,7 +364,7 @@ function Home() {
 
       <section id="kontakt">
 
-      <footer style={{
+     <footer style={{
         backgroundColor: '#1A1A1A',
         padding: '40px 20px',
         color: '#fff',
@@ -430,10 +430,7 @@ function Home() {
     <h3 style={{ fontWeight: 'bold', marginBottom: '10px' }}>Top kategorie</h3>
     <p>Kebab</p>
     <p>Pizza</p>
-    <p>Sushi</p>
-    <p>Flowers</p>
     <p>Burgers</p>
-    <p>Fish</p>
   </div>
 </footer>
 </section>

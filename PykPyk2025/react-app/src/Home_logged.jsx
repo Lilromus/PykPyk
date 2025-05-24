@@ -4,17 +4,29 @@ import './Home_logged.css';
 
 import logo2 from './assets/logo123.png';
 import userIcon from './assets/userIcon.png';
-import burger from './assets/burger_test.webp';
 
 import americanLogo from './assets/American_section_logo.png'
 import pizzaLogo from './assets/Pizza_section_logo.png'
 import asianLogo from './assets/Asian_section_logo.png'
 import kebabLogo from './assets/Kebabe_section_logo.png'
+
 import searchLogo from './assets/Search_logo.svg'
-
+import deliveryLogo from './assets/Delievery_logo.svg'
 import ratingLogo from './assets/Rating_logo.png'
-import delieveryLogo from './assets/Delievery_logo.svg'
 
+import Mac_cover from './assets/McDonald_cover.png'
+import KFC_cover from './assets/KFC_cover.png'
+import Dominos_cover from './assets/Dominos_cover.png'
+import DonerKebab_cover from './assets/DonerKebab_cover.png'
+import AsianHoanmy_cover from './assets/AsianHoanmy_cover.png'
+
+import ytlogo from './assets/youtube.png';
+import twitterlogo from './assets/twitterlogo.png';
+import facebooklogo from './assets/facebooklogo.png';
+import instagramlogo from './assets/instagramlogo.png';
+import phoneLogo from './assets/phonelogo.png'
+import emailLogo from './assets/email.png'
+import googlemapsLogo from './assets/googlemaps.png'
 
 function HomeLogged() {
   const navigate = useNavigate();
@@ -37,16 +49,16 @@ function HomeLogged() {
 
   const otherLogo = [
     {label: 'Rating', icon: ratingLogo},
-    {label: 'Delievery', icon: delieveryLogo},
+    {label: 'Delievery', icon: deliveryLogo},
   ]
 
   //tablica z restauracjami 
   const products = [
-    { name: "McDonald's",img: burger, time: '25-35 min', fee: '2,99 zł', category: 'American', rating: { percent: '96%', count: 188 }},
-    { name: 'KFC',img: burger, time: '20-30 min', fee: '2,99 zł', category: 'American', rating: { percent: '96%', count: 188 }},
-    { name: 'Döner Kebab', img: burger, time: '30-40 min', fee: '1,99 zł', category: 'Kebab', rating: { percent: '96%', count: 188 }},
-    { name: 'Thai food', img: burger, time: '30-40 min', fee: '4,99 zł', category: 'Asian', rating: { percent: '96%', count: 188 }},
-    { name: "Domino's Pizza", img: burger, time: '30-40 min', fee: '2,99 zł', category: 'Pizza', rating: { percent: '96%', count: 188 }},
+    { name: "McDonald's",img: Mac_cover, time: '25-35 min', fee: '2,99 zł', category: 'American', rating: { percent: '96%', count: 188 }},
+    { name: 'KFC',img: KFC_cover, time: '20-30 min', fee: '2,99 zł', category: 'American', rating: { percent: '96%', count: 188 }},
+    { name: 'Döner Kebab', img: DonerKebab_cover, time: '30-40 min', fee: '2,99 zł', category: 'Kebab', rating: { percent: '96%', count: 188 }},
+    { name: 'Asia Hoanmy', img: AsianHoanmy_cover, time: '30-40 min', fee: '4,99 zł', category: 'Asian', rating: { percent: '96%', count: 188 }},
+    { name: "Domino's Pizza", img: Dominos_cover, time: '30-40 min', fee: 'Free', category: 'Pizza', rating: { percent: '96%', count: 188 }},
     // mozna dodac wiecej
   ];
 
@@ -64,8 +76,6 @@ function HomeLogged() {
       p.name.toLowerCase().includes(searchTerm.toLowerCase())
     );
   }
-
-
 
   return (
     <div className="home-logged-page">
@@ -129,39 +139,126 @@ function HomeLogged() {
             );
           })} 
           </div>
-          {/*Restauracje*/}
-          <div className="products-grid">
-          {filteredProducts.length >0
-            ? filteredProducts.map((prod) => (
-              <div className="product-card" key={prod.name}>
-                <div className='product-image-wrapper'>
-                <img src={prod.img} alt={prod.name} className="product-image"/>
+         {/* Restauracje */}
+        <div className="products-grid">
+          {filteredProducts.length > 0
+            ? filteredProducts.map((prod) => {
+              const slug = prod.name
+              .toLowerCase()
+              .replace(/[^a-z0-9]+/g, '-')
+              .replace(/(^-|-$)/g, '');
 
-                <div className='rating-badge'>
-                  <img src={ratingLogo} alt='Rating' className='rating-icon'/>
-                    <span className='rating-percent'>{prod.rating.percent}</span>
-                    <span className="rating-count">({prod.rating.count})</span>
-                  </div>
-                </div>
-                <div className="product-info">
-                  <h5 className="product-name">{prod.name}</h5>
-                  <p className="product-details"><img src={delieveryLogo} alt="Delievery" className='delievery-icon'/> {prod.fee} {prod.time}</p>
-                  <div className="product-meta">
-                    <span className="category">{prod.category}</span>
-                  </div>
-                </div>
+        return (
+          <div className="product-card" key={prod.name} onClick={() => navigate(`/home/${slug}`)} style={{ cursor: 'pointer' }}>
+            <div className="product-image-wrapper">
+              <img src={prod.img} alt={prod.name} className="product-image"/>
+
+              <div className="rating-badge">
+                <img src={ratingLogo} alt="Rating" className="rating-icon"/>
+                <span className="rating-percent">
+                  {prod.rating.percent}
+                </span>
+                <span className="rating-count">
+                  ({prod.rating.count})
+                </span>
               </div>
-
-            ))
-            : 
-            Array(6).fill().map((_, i) => (
-              <div className="product-card placeholder" key={`empty-${i}`}/>
-            ))
-          }
+            </div>
+            <div className="product-info">
+              <h5 className="product-name">{prod.name}</h5>
+              <p className="product-details">
+                <img
+                  src={deliveryLogo}
+                  alt="Delivery"
+                  className="delivery-icon"/>{' '}{prod.fee} · {prod.time}
+              </p>
+              <div className="product-meta">
+                <span className="category">{prod.category}</span>
+              </div>
+            </div>
           </div>
+        );
+      })
+    : 
+      Array(6)
+        .fill(null)
+        .map((_, i) => (
+          <div
+            className="product-card placeholder"
+            key={`empty-${i}`}
+          />
+      ))
+  }
+</div>
+
         </div>
         </section>
-    </div>
+
+        <footer style={{
+        backgroundColor: '#1A1A1A',
+        padding: '40px 20px',
+        color: '#fff',
+        display: 'flex',
+        justifyContent: 'space-around',
+        flexWrap: 'wrap',
+        fontSize: '14px'
+      }}>
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
+          <img src={logo2} alt="PykPyk logo" style={{ height: '55px', objectFit: 'contain', marginBottom: '10px'}} />
+          <p style={{
+            fontSize: '16px',
+            fontWeight: '500',
+            marginBottom: '20px'
+          }}>
+           Ułatwiamy dostęp do wszystkiego w Twoim mieście
+          </p>
+
+          <div style={{ display: 'flex', alignItems: 'center', gap: '20px'}}>
+          <a href="https://youtube.com/" target="_blank" rel="noopener noreferrer">
+          <img src={ytlogo} alt="YouTube" style={{ height: '20px', objectFit: 'contain' }} /> </a>
+          <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+          <img src={twitterlogo} alt="Twitter" style={{ height: '20px', objectFit: 'contain' }} /> </a>
+          <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer">
+          <img src={facebooklogo} alt="Facebook" style={{ height: '20px', objectFit: 'contain' }} /> </a>
+          <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer">
+          <img src={instagramlogo} alt="Instagram" style={{ height: '20px', objectFit: 'contain' }} /> </a>
+          </div>
+        </div>
+
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', color: '#ccc' }}>
+        <h3 style={{ fontWeight: 'bold', marginBottom: '10px', color: '#fff', fontSize: '16px' }}>Kontakt</h3>
+        <div style={{ display: 'flex', alignItems: 'center', marginBottom: '10px' }}>
+            <img
+              src={phoneLogo}
+              alt="Phone"
+              style={{ height: '20px', objectFit: 'contain', marginRight: '10px' }}/>
+            <span style={{ fontSize: '14px' }}>+48 123 456 789</span>
+          </div>
+          <div style={{ display: 'flex', alignItems: 'center', marginBottom: '10px' }}>
+              <img
+                src={emailLogo}
+                alt="Email"
+                style={{ height: '20px', objectFit: 'contain', marginRight: '10px' }}/>
+              <span style={{ fontSize: '14px' }}>pykpyk_contact@pyk.com</span>
+            </div>
+            <div style={{ display: 'flex', alignItems: 'center' }}>
+                <a href="https://google.com/maps/" target='_blank' rel="noopener noreferrer">
+                <img
+                  src={googlemapsLogo}
+                  alt="GoogleMaps"
+                  style={{ height: '20px', objectFit: 'contain', marginRight: '10px' }}/>
+                </a>
+                <span style={{ fontSize: '14px' }}>ul. Mikołaja Reja 25, 80-870 Gdańsk</span>
+              </div>
+        </div>
+      <div>
+        <h3 style={{ fontWeight: 'bold', marginBottom: '10px' }}>Top kategorie</h3>
+          <p>Kebab</p>
+          <p>Pizza</p>
+          <p>Burgers</p>
+      </div>
+    </footer>
+  </div>
+    
   );
 }
 

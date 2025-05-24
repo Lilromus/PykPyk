@@ -1,0 +1,23 @@
+.navbar {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    height:80px;     
+    background: #fff;
+  }
+  
+ 
+  .restaurant-page {
+    padding-top: 80px;  
+  }
+  
+
+  .rest-header-bg {
+    margin-bottom:590px;  
+    margin-left:20px;
+    width:1750px;
+    height:240px;    
+    background-size:cover;
+  }
+  

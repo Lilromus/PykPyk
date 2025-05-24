@@ -105,8 +105,7 @@ function HomeLogged() {
             className="search-input main-search" 
             placeholder="What can we get you?"
             value={searchTerm}
-            onChange={e => setSearchTerm(e.target.value)}
-            />
+            onChange={e => setSearchTerm(e.target.value)}/>
         </div>
         {/*TODO: NAPRAWIC WYSZUKIWARKE bo gdy sie wpisuje byle co to strona sie ROZPIERDALA*/}
 
@@ -132,7 +131,8 @@ function HomeLogged() {
           </div>
           {/*Restauracje*/}
           <div className="products-grid">
-            {filteredProducts.map(prod => (
+          {filteredProducts.length >0
+            ? filteredProducts.map((prod) => (
               <div className="product-card" key={prod.name}>
                 <div className='product-image-wrapper'>
                 <img src={prod.img} alt={prod.name} className="product-image"/>
@@ -151,7 +151,13 @@ function HomeLogged() {
                   </div>
                 </div>
               </div>
-            ))}
+
+            ))
+            : 
+            Array(6).fill().map((_, i) => (
+              <div className="product-card placeholder" key={`empty-${i}`}/>
+            ))
+          }
           </div>
         </div>
         </section>

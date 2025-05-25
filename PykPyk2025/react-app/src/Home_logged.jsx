@@ -154,7 +154,7 @@ function HomeLogged() {
               <img src={prod.img} alt={prod.name} className="product-image"/>
 
               <div className="rating-badge">
-                <img src={ratingLogo} alt="Rating" className="rating-icon"/>
+                <img src={ratingLogo} alt="Rating" className="rating-icon" style={{ width: 16, height: 16 }}/>
                 <span className="rating-percent">
                   {prod.rating.percent}
                 </span>
@@ -169,7 +169,7 @@ function HomeLogged() {
                 <img
                   src={deliveryLogo}
                   alt="Delivery"
-                  className="delivery-icon"/>{' '}{prod.fee} · {prod.time}
+                  className="delivery-icon" style={{ width: 16, height: 16 }}/>{' '}{prod.fee} · {prod.time}
               </p>
               <div className="product-meta">
                 <span className="category">{prod.category}</span>

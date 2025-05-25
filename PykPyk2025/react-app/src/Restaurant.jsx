@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState} from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import './Restaurant.css';
 
@@ -11,6 +11,26 @@ import DonerCover from './assets/DonerKebab_Blurred_cover.jpg'
 import AsianCover from './assets/AsianHoanmy_Blurred_cover.jpg'
 import DominoCover from './assets/Dominos_Blurred_cover.jpg'
 
+import McDonal_panel from './assets/McDonald_logo_panel.jpeg'
+import KFC_panel from './assets/KFC_logo_panel.jpeg'
+import Dominos_panel from './assets/Dominos_logo_panel.jpeg'
+import Doner_panel from './assets/DonerKebab_logo_panel.jpeg'
+import Asia_panel from './assets/AsiaHoanmy_logo_panel.jpeg'
+
+import Delievery from './assets/Bike_logo.png'
+import Clock from './assets/Clock_logo.png'
+import Like from './assets/Like_logo.png'
+
+
+const panelImages = {
+  "mcdonald-s":McDonal_panel,
+  "kfc":KFC_panel,
+  "d-ner-kebab":Doner_panel,
+  "asia-hoanmy":Asia_panel,
+  "domino-s-pizza":Dominos_panel,
+}
+
+
 export const coverImages = {
     "mcdonald-s": McCover,
     "kfc":        KfcCover,
@@ -20,10 +40,17 @@ export const coverImages = {
   };
 
 export default function Restaurant() {
+    useEffect(() => {
+        document.documentElement.classList.add('restaurant-page-active');
+        return () => {
+          document.documentElement.classList.remove('restaurant-page-active');
+        };
+    }, []);
   const { restaurantId } = useParams();
   const navigate     = useNavigate();
 
   const headerImg = coverImages[restaurantId] || coverImages['default'];
+  const panelImg = panelImages[restaurantId]
 
   const [dropdownVisible, setDropdownVisible] = useState(false);
   const toggleDropdown = () => setDropdownVisible(v => !v);
@@ -39,9 +66,10 @@ export default function Restaurant() {
 
   return (
     <>
+    {/**Nawigacja*/}
     <div className='restaurant-page'>
         <header className="navbar">
-        <img src={logo2} alt="PykPyk Logo" className="logo" />
+        <img src={logo2} alt="PykPyk Logo" className="logo" onClick={() => navigate('/home')}/>
 
         <div className="user-menu" onClick={toggleDropdown}>
           <img src={userIcon} alt="User" className="user-icon" />
@@ -65,12 +93,33 @@ export default function Restaurant() {
             </div>
           )}
         </div>
+        <div className='rest-banner' style={{ backgroundImage: `url(${headerImg})` }}/>
       </header>
 
-      <div className='rest-header-bg' style={{ backgroundImage: `url(${headerImg})` }}/>
 
+      <div className="rest-panels">
+        <div className="rest-main-card">
+           <div className="rest-main-card-header">
+          <img src={panelImg} alt={restaurantId} className='rest-main-card_logo'/>
+          <div className='rest-main-card-title'>
+            <h1 className='rest-name'>{restaurantId.replaceAll('-', ' ')}</h1>
+        </div>
+      </div>
 
+    <div className="rest-main-card-tags">
+      <div className="tag"><span className="icon"><img src={Like} alt="like" /></span>97%</div>
+      <div className="tag"><span className="icon"><img src={Clock} alt="clock" /></span>15–25’</div>
+      <div className="tag"><span className="icon"><img src={Delievery} alt="delivery" /></span>2,99 zł</div>
     </div>
+  </div>
+
+      <div className="rest-sidebar-card">
+          dsdsds
+        </div>
+      </div>
+    </div>
+
+
     </>
   );
 }

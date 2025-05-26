@@ -25,7 +25,7 @@ body.restaurant-page-active {
     top: 80px;
     left: 0;
     right: 0;
-    height: 240px;
+    height: 210px;
     width: 1750px;
     background-size:cover;
     background-position: center;
@@ -41,7 +41,6 @@ body.restaurant-page-active {
     margin: 0 auto;
     padding: 0 20px;
     margin-top: -50px;      
-    z-index: 1;
   }
   
   .rest-main-card {
@@ -61,33 +60,46 @@ body.restaurant-page-active {
     gap: 16px;
     width: 1000px;
   }
+
+  .rest-main-card-logoBlock{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
   
   .rest-main-card_logo {
     width: 64px;
     height: 64px;
     object-fit: contain;
     border-radius: 12px;
+    margin-bottom: 8px;
   }
   
   .rest-name {
     font-size: 24px;
     font-weight: 700;
     text-transform: capitalize;
+    line-height: 1.2;
     margin: 0;
   }
+
   
   .rest-main-card-tags {
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 0;
     gap: 20px;
     font-size: 14px;
     color: #333;
-    margin-left: 80px; /* aligns under text, not logo */
   }
   
   .tag {
+    margin-top: 20px;
     display: flex;
     align-items: left;
-
   }
   
   .icon img {
@@ -95,4 +107,34 @@ body.restaurant-page-active {
     height: 20px;
     object-fit: contain;
   }
+
+  .restaurant-floating-logo {
+    position: absolute;
+    top: -40px;
+    left: 20px;
+    z-index: 10;
+    background: white;
+    padding: 8px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+
+  .discount-badge {
+    background-color: #fbbd08; 
+    color: #111;
+    font-weight: 500;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-left: 5px;
+    margin-top: 20px;
+    display: inline-block;
+  }
+
+  .discount-badge img{
+      width: 18px;
+      height: 18px;
+  }
+
+  
+
   

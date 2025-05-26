@@ -21,6 +21,7 @@ import hut from './assets/hut.jpg'
 import salad from './assets/salad.jpg'
 import pasibus from './assets/passibus.jpg'
 import thai from './assets/thai.jpg'
+import miastaLogo from './assets/Miasta_logo.svg'
 
 function Home() {
   const navigate = useNavigate();
@@ -273,13 +274,22 @@ function Home() {
         padding: '60px 20px',
         textAlign: 'center'
       }}>
+        <img
+        src={miastaLogo}
+        alt="Miasta logo"
+        style={{ marginRight: 10}}
+      />
         <h2 style={{
           fontSize: '36px',
           fontWeight: 'bold',
-          marginBottom: '40px'
+          marginBottom: '40px',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center'
         }}>
-          Miasta w których dostarczamy
-        </h2>
+      Miasta w których dostarczamy
+    </h2>
+
 
         <div style={{
           display: 'flex',
@@ -357,7 +367,7 @@ function Home() {
           lineHeight: '1.6',
           color: '#333'
         }}>
-          <span style={highlight}>PykPyk to innowacyjna platforma dostaw, która łączy ludzi z lokalnymi restauracjami, sklepami i usługami. Naszą misją jest uproszczenie codziennych zakupów i dostaw dzięki szybkiemu, bezpiecznemu i wygodnemu systemowi zamówień. Niezależnie od tego, czy potrzebujesz jedzenia, produktów spożywczych, leków czy prezentu – my to dostarczymy. Działamy z pasją i lokalnym zaangażowaniem, bo wierzymy, że czas to najcenniejsza waluta.</span>
+          <span>PykPyk to innowacyjna platforma dostaw, która łączy ludzi z lokalnymi restauracjami, sklepami i usługami. Naszą misją jest uproszczenie codziennych zakupów i dostaw dzięki szybkiemu, bezpiecznemu i wygodnemu systemowi zamówień. Niezależnie od tego, czy potrzebujesz jedzenia, produktów spożywczych, leków czy prezentu – my to dostarczymy. Działamy z pasją i lokalnym zaangażowaniem, bo wierzymy, że czas to najcenniejsza waluta.</span>
         </p>
       </div>
       </section>

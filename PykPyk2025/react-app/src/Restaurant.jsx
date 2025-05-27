@@ -21,6 +21,7 @@ import Delievery from './assets/Bike_logo.png'
 import Clock from './assets/Clock_logo.png'
 import Like from './assets/Like_logo.png'
 import Discount from './assets/Discount_Logo.png'
+import Cosmonaut from './assets/Cosmonaut_order_logo.svg'
 
 
 const restaurantNames = {
@@ -130,8 +131,15 @@ export default function Restaurant() {
           </div>
   
           <div className="rest-sidebar-card">
-            dsdsds
+            <h2 className="sidebar-title">Twoje zamówienia</h2>
+
+            <div className="sidebar-empty">
+               <img src={Cosmonaut} alt="Empty Cart" className="sidebar-image" />
+               <p className="sidebar-text">Nie dodałeś jeszcze żadnego produktu. Kiedy dodasz, tutaj je zobaczysz</p>
+            </div>
           </div>
+
+
         </div>
       </div>
     </>

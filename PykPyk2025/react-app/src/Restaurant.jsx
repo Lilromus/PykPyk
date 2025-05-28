@@ -60,19 +60,17 @@ export default function Restaurant() {
         };
     }, []);
   const { restaurantId } = useParams();
-  const navigate     = useNavigate();
+  const navigate = useNavigate();
 
   const headerImg = coverImages[restaurantId] || coverImages['default'];
   const panelImg = panelImages[restaurantId]
 
   const [dropdownVisible, setDropdownVisible] = useState(false);
   const toggleDropdown = () => setDropdownVisible(v => !v);
-  const handleLogout   = () => navigate('/'); 
+  const handleLogout = () => navigate('/'); 
 
   const [query, setQuery] = useState('');
-  const visibleItems = menu.filter(item =>
-    item.name.toLowerCase().includes(query.toLowerCase())
-  );
+  const visibleItems = menu.filter(item => item.name.toLowerCase().includes(query.toLowerCase()));
 
   return (
     <>

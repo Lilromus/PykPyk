@@ -39,7 +39,7 @@ body.restaurant-page-active {
     gap: 20px;
     max-width: 1200px;     
     padding: 0 20px;
-    margin-top: 300px;  
+    margin-top: 500px;  
     margin-left: -135px;    
     align-items: flex-start;
   }
@@ -195,6 +195,123 @@ body.restaurant-page-active {
     font-size: 13px;
   }
   
+  
+.rest-menu {
+  position: relative;
+  z-index: 2;               
+  max-width: 1010px;
+  margin-top: -350px;
+  margin-left: -115px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.menu-search {
+  display:flex;
+  justify-content: flex-end;
+  margin-bottom: 24px;
+  max-width: 50%;
+}
+
+.menu-search input {
+  width: 100%;
+  padding: 10px 16px;
+  border: 1px solid #e0e0e0;
+  border-radius: 24px;
+  font-size: 14px;
+}
+
+.menu-search input:focus {
+  outline:none;
+  border-color:#efb541;
+}
+
+.rest-menu .menu-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  grid-auto-rows: 200px;
+}
+
+.menu-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 0.5px rgb(204, 199, 199) solid;
+  padding: 12px;
+  transition: transform 0.2s;
+}
+
+.menu-card:hover{
+  border: 1px #efb541 solid;
+}
+
+.menu-card:hover {
+  transform: translateY(-4px);
+}
+
+.menu-card-img {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin-right: 16px;
+  border: 0.5px rgb(204, 199, 199) solid;
+}
+
+.menu-card-info {
+  flex: 1;
+}
+
+.menu-card-name {
+  margin: 0 0 4px;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: -70px;
+}
+
+.menu-card-price {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+  font-size: 16px;
+  margin-left: 5px;
+}
+
+
+.add-button{
+  all: unset;
+  position: absolute;
+  bottom:12px;
+  right: 12px;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border:none;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.add-button img{
+  width: 30px;
+  height: 30px;
+}
+
+.product-card.placeholder,
+.menu-card.placeholder{
+  border: none;
+  box-shadow: none;
+  background: transparent;
+}
+
+
 
   
 

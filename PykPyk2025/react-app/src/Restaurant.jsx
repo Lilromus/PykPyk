@@ -24,6 +24,7 @@ import Discount from './assets/Discount_Logo.png';
 import Cosmonaut from './assets/Cosmonaut_order_logo.svg';
 
 import Plus from './assets/Plus.svg';
+import Minus from './assets/Minus.svg';
 
 // McDonald's menu images
 import McNuggets from './assets/Mac_produkt1.avif';
@@ -82,6 +83,42 @@ export default function Restaurant() {
 
   const [dropdownVisible, setDropdownVisible] = useState(false);
   const [menuQuery, setMenuQuery] = useState('');
+  const [cartItems, setCartItems] = useState([]);
+
+  const addToCart = (product) => {
+    setCartItems(prev =>  {
+      const existing = prev.find(item => item.name === product.name);
+      if (existing)
+      {
+        return prev.map(item =>
+        item.name === product.name ? { ...item, qty: item.qty + 1 } : item
+        );
+      }
+      else 
+      {
+        return [...prev, { ...product, qty: 1}];
+      }
+    });
+  }; 
+
+  const removeFromCart = (product) => {
+    setCartItems(prev => {
+      return prev
+        .map(item =>
+          item.name === product.name ? { ...item, qty: item.qty - 1 } : item
+        )
+        .filter(item => item.qty > 0);
+    });
+  };
+
+  const calculateTotal = () => {
+    return cartItems.reduce((sum, item) => {
+      const price = parseFloat(item.price.replace(',', '.'));
+      return sum + price * item.qty;
+    }, 0);
+  };
+
+
 
   const menus = {
     "mcdonald-s": [
@@ -130,29 +167,26 @@ export default function Restaurant() {
     };
   }, []);
 
+  useEffect(() => {
+    document.body.style.overflow = 'hidden';
+  
+    return () => {
+      document.body.style.overflow = 'auto'; // Reset when unmounting
+    };
+  }, []);
+
   const headerImg = coverImages[restaurantId];
   const panelImg = panelImages[restaurantId];
 
   return (
     <div className='restaurant-page'>
       <header className="navbar">
-        <img
-          src={logo2}
-          alt="PykPyk Logo"
-          className="logo"
-          onClick={() => navigate('/home')}
-        />
+        <img src={logo2} alt="PykPyk Logo" className="logo" onClick={() => navigate('/home')}/>
 
         <div className="user-menu" onClick={toggleDropdown}>
           <img src={userIcon} alt="User" className="user-icon" />
           <span className="user-name">Admin</span>
-          <svg
-            className={`arrow ${dropdownVisible ? 'open' : ''}`}
-            viewBox="0 0 24 24"
-            stroke="black"
-            strokeWidth="2"
-            fill="none"
-          >
+          <svg className={`arrow ${dropdownVisible ? 'open' : ''}`} viewBox="0 0 24 24" stroke="black" strokeWidth="2" fill="none">
             <polyline points="6 9 12 15 18 9" />
           </svg>
           {dropdownVisible && (
@@ -167,10 +201,7 @@ export default function Restaurant() {
           )}
         </div>
 
-        <div
-          className='rest-banner'
-          style={{ backgroundImage: `url(${headerImg})` }}
-        />
+        <div className='rest-banner' style={{ backgroundImage: `url(${headerImg})` }}/>
       </header>
 
       <div className="rest-panels">
@@ -201,10 +232,41 @@ export default function Restaurant() {
 
         <div className="rest-sidebar-card">
           <h2 className="sidebar-title">Twoje zamówienia</h2>
+          {cartItems.length === 0 ? (
           <div className="sidebar-empty">
             <img src={Cosmonaut} alt="Empty Cart" className="sidebar-image" />
-            <p className="sidebar-text">Nie dodałeś jeszcze żadnego produktu. Kiedy dodasz, tutaj je zobaczysz</p>
+              <p className="sidebar-text">
+              Nie dodałeś jeszcze żadnego produktu. Kiedy dodasz, tutaj je zobaczysz
+              </p>
           </div>
+        ) : (
+        <div className="sidebar-cart">
+        {cartItems.map(item => (
+          <div className="cart-item" key={item.name}>
+           <div className="cart-info">
+              <span className="cart-qty"><strong>{item.qty}x </strong></span>
+              <span className="cart-name">{item.name}</span>
+          </div>
+        <div className="cart-controls">
+            <button onClick={() => removeFromCart(item)} className="icon-button">
+                <img src={Minus} alt="Remove" />
+            </button>
+            <span className="cart-price">{item.price}</span>
+            <button onClick={() => addToCart(item)} className="icon-button">
+              <img src={Plus} alt="Add" />
+            </button>
+        </div>
+      </div>
+    ))}
+
+    {/* Total & Order Button */}
+    <div className="cart-total">
+    <button className="order-button" onClick={() => navigate('/cart')}> 
+        Zamów za {(calculateTotal() + 2.99).toFixed(2)} zł
+    </button>
+    </div>
+  </div>
+)}
         </div>
       </div>
 
@@ -233,7 +295,7 @@ export default function Restaurant() {
                         <p className="menu-card-desc">{item.description}</p>
                       )}
                     </div>
-                    <button className="add-button">
+                    <button className="add-button" onClick={() => addToCart(item)}>
                       <img src={Plus} alt="Add to cart" />
                     </button>
                   </div>

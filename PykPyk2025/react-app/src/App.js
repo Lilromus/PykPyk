@@ -8,6 +8,7 @@ import Home from './Home.jsx';
 import Home_logged from './Home_logged.jsx';
 import EditProfile from './Edit_profile.jsx';
 import Restaurant from './Restaurant.jsx';
+import Cart from './Cart.jsx'
 
 function App() {
     return (
@@ -19,6 +20,7 @@ function App() {
             <Route path="/partner" element={<Partner />} />
             <Route path="/home" element={<Home_logged />} />
             <Route path="/home/:restaurantId" element={<Restaurant />} />
+            <Route path="/cart" element={<Cart />} />
             <Route path="/editprofile" element={<EditProfile />} />
         </Routes>
     );

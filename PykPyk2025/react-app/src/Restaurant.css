@@ -7,12 +7,13 @@ body.restaurant-page-active {
 */
 
 .navbar {
-    position:fixed;
+    position: fixed;
     top:0;
     left:0;
     right:0;
     height:80px;     
     background: #fff;
+    overflow-y: hidden;
   }
   
 
@@ -21,7 +22,7 @@ body.restaurant-page-active {
   }
 
   .rest-banner{
-    position: absolute;
+    position: fixed;
     top: 80px;
     left: 0;
     right: 0;
@@ -29,18 +30,25 @@ body.restaurant-page-active {
     width: 1750px;
     background-size:cover;
     background-position: center;
-    overflow: hidden;
+    z-index: 0;
   }
   
 
+  .rest-panels,
+  .rest-menu,
+  .rest-sidebar-card,
+  .navbar{
+    position: relative;
+    z-index: 2;
+  }
   .rest-panels {
     position: relative;
     display: flex;
     gap: 20px;
     max-width: 1200px;     
     padding: 0 20px;
-    margin-top: 500px;  
-    margin-left: -135px;    
+    margin-top: 105px;  
+    margin-left: 135px;    
     align-items: flex-start;
   }
   
@@ -201,7 +209,7 @@ body.restaurant-page-active {
   z-index: 2;               
   max-width: 1010px;
   margin-top: -350px;
-  margin-left: -115px;
+  margin-left: 155px;
   padding: 20px;
   background: #fff;
   border-radius: 12px;
@@ -310,6 +318,67 @@ body.restaurant-page-active {
   box-shadow: none;
   background: transparent;
 }
+
+
+.cart-header{
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.cart-controls{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-top: 7px;
+}
+
+.icon-button{
+  background-color: transparent;
+  border:none;
+  cursor: pointer;
+  padding:4px;
+  border-radius: 50%;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.cart-total {
+  margin-top: 16px;
+  font-weight: bold;
+}
+
+.cart-info{
+  flex: 1;
+  max-width: 60%;
+  display: flex;
+  flex-direction: column;
+  word-break: break-word;
+}
+
+.order-button {
+  background-color: #44814b;
+  color: white;
+  padding: 12px;
+  border: none;
+  font-weight: 2000;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 30px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.order-button:hover{
+  background-color: #239430;
+  cursor: pointer;
+}
+
 
 
 

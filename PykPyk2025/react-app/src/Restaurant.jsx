@@ -30,6 +30,28 @@ import McNuggets from './assets/Mac_produkt1.avif';
 import BigMac from './assets/Mac_produkt2.avif';
 import HappyMeal from './assets/Mac_produkt3.png';
 
+//KFC menu images
+import HotWings from './assets/KFC_produkt1.png';
+import GrandBurger from './assets/KFC_produkt2.png';
+import Longer from './assets/KFC_produkt3.png';
+
+//Doner Kebab menu images
+import Rollo_Kebap from './assets/Doner_produkt1.png';
+import Fry_Rollo_Kebap from './assets/Doner_produkt2.png';
+import Kebab_w_bulce from './assets/Doner_produkt3.png';
+
+//Asia Hoanmy menu images
+import Kurczak from './assets/Asia_produkt1.jpeg'; 
+import Sajgoniki from './assets/Asia_produkt2.jpeg';
+import Zupa from './assets/Asia_produkt3.jpeg';
+
+//Dominos menu images
+import NewYorker from './assets/Dominos_produkt1.png';
+import BBQ_Bacon from './assets/Dominos_produkt2.png'
+import Chiken_jokey from './assets/Dominos_produkt3.png'
+import Diavolo from './assets/Dominos_produkt4.png'
+
+
 const restaurantNames = {
   "mcdonald-s": "McDonald's",
   "kfc":        "KFC",
@@ -56,39 +78,60 @@ export const coverImages = {
 
 export default function Restaurant() {
   const { restaurantId } = useParams();
-  const navigate        = useNavigate();
+  const navigate = useNavigate();
+
+  const [dropdownVisible, setDropdownVisible] = useState(false);
+  const [menuQuery, setMenuQuery] = useState('');
+
+  const menus = {
+    "mcdonald-s": [
+      { name: "McNuggets® 20szt + 2x Cheeseburger", img: McNuggets, price: "39,00 zł" },
+      { name: "McZestaw Big Mac®", img: BigMac, price: "31,90 zł" },
+      { name: "Happy Meal®", img: HappyMeal, price: "23,50 zł" },
+    ],
+    "kfc": [
+      { name: "Kubełek 15 Hot Wings", img: HotWings, price: "44,72 zł", description: "15 Hot Wings (pikantne skrzydełka) + 2x frytki 80g" },
+      { name: "Grander Burger Big Box", img: GrandBurger, price: "44,99 zł", description: "Burger Grander (min. 290g) + 5 Hot Wings + duże frytki" },
+      { name: "Longer Big Box", img: Longer, price: "33,99 zł", description: "2× Longer + 5 Hot Wings + duże frytki" },
+    ],
+    "d-ner-kebab": [
+      { name: "Rollo Kebap", img: Rollo_Kebap, price: "27,95 zł", description: "Kurczak/wołowina, sałata, kapusta, sosy" },
+      { name: "Fryt Rollo Kebap", img: Fry_Rollo_Kebap, price: "28,95 zł", description: "Rollo + frytki + sosy" },
+      { name: "Kebap w bułce", img: Kebab_w_bulce, price: "27,95 zł", description: "Klasyczny kebap w bułce + sosy" },
+    ],
+    "asia-hoanmy": [
+      { name: "Kurczak chrupiący filet, surówka", img: Kurczak, price: "40,52 zł" },
+      { name: "Sajgonki 2szt. z surówką i makaronem", img: Sajgoniki, price: "27,45 zł" },
+      { name: "Zupa PHO z makaronem, ryżem i wołowiną", img: Zupa, price: "33,99 zł" },
+    ],
+    "domino-s-pizza": [
+      { name: "New Yorker (XXL)", img: NewYorker, price: "43,39 zł", description: "pepperoni, szynka, boczek, pieczarki" },
+      { name: "BBQ Bacon Burger (XXL)", img: BBQ_Bacon, price: "43,39 zł", description: "sos BBQ, boczek, podwójna wołowina" },
+      { name: "Chicken Feast (XXL)", img: Chiken_jokey, price: "43,39 zł", description: "kurczak, cebula, kukurydza" },
+      { name: "Diavola (XXL)", img: Diavolo, price: "43,39 zł", description: "pepperoni, jalapeños, cebula" },
+    ],
+  };
 
  
-  const [dropdownVisible, setDropdownVisible] = useState(false);
-  const [menuQuery, setMenuQuery]             = useState('');
+  const menuList = menus[restaurantId] || [];
 
 
-  const isMcDonald = restaurantId === "mcdonald-s";
-
-  
-  const mcdonaldMenu = [
-    { name: "McNuggets® 20szt + 2x Cheeseburger", img: McNuggets, price: "39,00 zł" },
-    { name: "McZestaw Big Mac®",img: BigMac,    price: "31,90 zł" },
-    { name: "Happy Meal®", img: HappyMeal, price: "23,50 zł" },
-  ];
-
-  
-  const visibleItems = mcdonaldMenu.filter(item =>
+  const visibleItems = menuList.filter(item =>
     item.name.toLowerCase().includes(menuQuery.toLowerCase())
   );
 
-
   const toggleDropdown = () => setDropdownVisible(v => !v);
-  const handleLogout   = () => navigate('/');
+  const handleLogout = () => navigate('/');
 
   useEffect(() => {
     document.documentElement.classList.add('restaurant-page-active');
-    return () =>
+    return () => {
       document.documentElement.classList.remove('restaurant-page-active');
+    };
   }, []);
 
-  const headerImg = coverImages[restaurantId] || coverImages['default'];
-  const panelImg  = panelImages[restaurantId];
+  const headerImg = coverImages[restaurantId];
+  const panelImg = panelImages[restaurantId];
 
   return (
     <div className='restaurant-page'>
@@ -114,10 +157,7 @@ export default function Restaurant() {
           </svg>
           {dropdownVisible && (
             <div className="dropdown">
-              <div
-                className="dropdown-item"
-                onClick={() => navigate('/editprofile')}
-              >
+              <div className="dropdown-item" onClick={() => navigate('/editprofile')}>
                 Edytuj profil
               </div>
               <div className="dropdown-item logout" onClick={handleLogout}>
@@ -135,20 +175,14 @@ export default function Restaurant() {
 
       <div className="rest-panels">
         <div className="restaurant-floating-logo">
-          <img
-            src={panelImg}
-            alt={restaurantId}
-            className="rest-main-card_logo"
-          />
+          <img src={panelImg} alt={restaurantId} className="rest-main-card_logo" />
         </div>
 
         <div className="rest-main-card">
           <div className="rest-main-card-header">
             <div className="rest-main-card-logoBlock">
               <div className='rest-name-row'>
-                <div className="rest-name">
-                  {restaurantNames[restaurantId]}
-                </div>
+                <div className="rest-name">{restaurantNames[restaurantId]}</div>
                 <div className="discount-badge">
                   <span>
                     <img src={Discount} alt="discount" />
@@ -157,18 +191,9 @@ export default function Restaurant() {
                 </div>
               </div>
               <div className="rest-main-card-tags">
-                <div className="tag">
-                  <span className="icon"><img src={Like} alt="like" /></span>
-                  97%
-                </div>
-                <div className="tag">
-                  <span className="icon"><img src={Clock} alt="clock" /></span>
-                  15–25m
-                </div>
-                <div className="tag">
-                  <span className="icon"><img src={Delievery} alt="delivery" /></span>
-                  2,99 zł
-                </div>
+                <div className="tag"><span className="icon"><img src={Like} alt="like" /></span>97%</div>
+                <div className="tag"><span className="icon"><img src={Clock} alt="clock" /></span>15–25m</div>
+                <div className="tag"><span className="icon"><img src={Delievery} alt="delivery" /></span>2,99 zł</div>
               </div>
             </div>
           </div>
@@ -177,19 +202,13 @@ export default function Restaurant() {
         <div className="rest-sidebar-card">
           <h2 className="sidebar-title">Twoje zamówienia</h2>
           <div className="sidebar-empty">
-            <img
-              src={Cosmonaut}
-              alt="Empty Cart"
-              className="sidebar-image"
-            />
-            <p className="sidebar-text">
-              Nie dodałeś jeszcze żadnego produktu. Kiedy dodasz, tutaj je zobaczysz
-            </p>
+            <img src={Cosmonaut} alt="Empty Cart" className="sidebar-image" />
+            <p className="sidebar-text">Nie dodałeś jeszcze żadnego produktu. Kiedy dodasz, tutaj je zobaczysz</p>
           </div>
         </div>
-        
       </div>
-      {isMcDonald && (
+
+      {menuList.length > 0 && (
         <div className="rest-menu">
           <div className="menu-search">
             <input
@@ -201,34 +220,33 @@ export default function Restaurant() {
           </div>
 
           <div className="menu-grid">
-          {visibleItems.length > 0
-            ? visibleItems.map(item => (
-            <div className="menu-card" key={item.name}>
-              <div className="menu-card-media">
-                <img src={item.img} alt={item.name} className="menu-card-img" />
-                <p className="menu-card-price">{item.price}</p>
-              </div>
-              <div className="menu-card-info">
-                <h5 className="menu-card-name">{item.name}</h5>
-              </div>
-              <button className="add-button">
-                <img src={Plus} alt="Add to cart" />
-              </button>
-            </div>
-            
-          ))
-        : Array(3)
-            .fill(null)
-            .map((_, i) => (
-              <div
-                className="menu-card placeholder"
-                key={`empty-${i}`}
-              />
-            ))
-      }
-    </div>
-  </div>
-)}
+            {visibleItems.length > 0
+              ? visibleItems.map(item => (
+                  <div className="menu-card" key={item.name}>
+                    <div className="menu-card-media">
+                      <img src={item.img} alt={item.name} className="menu-card-img" />
+                      <p className="menu-card-price">{item.price}</p>
+                    </div>
+                    <div className="menu-card-info">
+                      <h5 className="menu-card-name">{item.name}</h5>
+                      {item.description && (
+                        <p className="menu-card-desc">{item.description}</p>
+                      )}
+                    </div>
+                    <button className="add-button">
+                      <img src={Plus} alt="Add to cart" />
+                    </button>
+                  </div>
+                ))
+              : Array(3)
+                  .fill(null)
+                  .map((_, i) => (
+                    <div className="menu-card placeholder" key={`empty-${i}`} />
+                  ))
+            }
+          </div>
+        </div>
+      )}
     </div>
   );
 }

@@ -1,10 +1,17 @@
-﻿import React, { useState } from 'react';
+﻿import React, { useState, useEffect  } from 'react';
 import './EditProfile.css';
 import { useNavigate } from 'react-router-dom';
 import logo from './assets/logo123.png';
 import userIcon from './assets/userIcon.png';
 
 function EditProfile() {
+  useEffect(() => {
+    document.body.style.overflow = 'hidden';
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, []);
+
   const [name, setName] = useState('Admin');
   const [email, setEmail] = useState('admin@example.com');
   const [password, setPassword] = useState('');
@@ -21,6 +28,7 @@ function EditProfile() {
 
   return (
     <div className="edit-profile-page">
+      <div className='navbar-margin'>
       <header className="navbar">
         <img src={logo} alt="Logo" className="logo" />
         <div className="user-menu" onClick={toggleDropdown}>
@@ -36,6 +44,7 @@ function EditProfile() {
           )}
         </div>
       </header>
+      </div>
 
       <main className="edit-profile-container">
         <h2>Konto</h2>

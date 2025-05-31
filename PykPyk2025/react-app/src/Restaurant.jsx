@@ -259,10 +259,15 @@ export default function Restaurant() {
       </div>
     ))}
 
-    {/* Total & Order Button */}
+ 
     <div className="cart-total">
-    <button className="order-button" onClick={() => navigate('/cart')}> 
-        Zamów za {(calculateTotal() + 2.99).toFixed(2)} zł
+      <button className="order-button" onClick={() =>
+        navigate('/cart', {
+        state: {
+          cartItems: cartItems,
+          totalAmount: calculateTotal(), 
+        }})}>
+      Zamów za {(calculateTotal() + 2.99).toFixed(2)} zł
     </button>
     </div>
   </div>

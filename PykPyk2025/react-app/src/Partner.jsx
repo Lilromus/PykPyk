@@ -14,33 +14,58 @@ function Partner() {
   const [errorMessage, setErrorMessage] = useState('');
   const navigate = useNavigate();
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+    const handleSubmit = (e) => {
+        e.preventDefault();
 
-    if (!imie || !nazwisko || !firma || !typDzialalnosci || !telefon || !email) {
-      setErrorMessage('Proszę wypełnić wszystkie pola.');
-      return;
-    }
+        if (!imie || !nazwisko || !firma || !typDzialalnosci || !telefon || !email || !adres || !Miasto) {
+            setErrorMessage('Proszę wypełnić wszystkie pola.');
+            return;
+        }
 
-    if (!/^\d{9}$/.test(telefon)) {
-      setErrorMessage('Numer telefonu musi zawierać 9 cyfr.');
-      return;
-    }
+        if (!/^\d{9}$/.test(telefon)) {
+            setErrorMessage('Numer telefonu musi zawierać 9 cyfr.');
+            return;
+        }
 
-    if (!/\S+@\S+\.\S+/.test(email)) {
-      setErrorMessage('Wprowadź poprawny adres e-mail.');
-      return;
-    }
-    if (!/^ul\.\s?[A-ZŁŚŻŹ][a-ząćęłńóśźż]+(\s[A-ZŁŚŻŹa-ząćęłńóśźż]+)*\s\d{1,3}$/.test(adres)) {
-        setErrorMessage('Adres powinien być w formacie: ul. Nazwa 123');
-        return;
-      }
+        if (!/\S+@\S+\.\S+/.test(email)) {
+            setErrorMessage('Wprowadź poprawny adres e-mail.');
+            return;
+        }
 
-    setErrorMessage('');
-    setTimeout(() => {
-      navigate('/');
-    }, 1000);
-  };
+        if (!/^ul\.\s?[A-ZŁŚŻŹ][a-ząćęłńóśźż]+(\s[A-ZŁŚŻŹa-ząćęłńóśźż]+)*\s\d{1,3}$/.test(adres)) {
+            setErrorMessage('Adres powinien być w formacie: ul. Nazwa 123');
+            return;
+        }
+
+        setErrorMessage('');
+
+        fetch('http://localhost:5090/api/partner/add', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                imie,
+                nazwisko,
+                firma,
+                typDzialalnosci,
+                miasto: Miasto,
+                adres,
+                telefon,
+                email
+            })
+        })
+            .then(res => {
+                if (!res.ok) throw new Error('Błąd zapisu partnera');
+                return res.json();
+            })
+            .then(data => {
+                console.log(data);
+                navigate('/');
+            })
+            .catch(err => {
+                setErrorMessage(err.message);
+            });
+    };
+
 
   const inputStyle = (value) => {
     if (errorMessage && value === '') {

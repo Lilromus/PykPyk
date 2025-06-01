@@ -10,5 +10,7 @@ namespace backend.Data
         }
 
         public DbSet<User> Users { get; set; }
+
+        public DbSet<Partner> Partnerzy { get; set; }
     }
 }

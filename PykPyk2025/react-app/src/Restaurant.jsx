@@ -175,11 +175,20 @@ export default function Restaurant() {
     };
   }, []);
 
+  useEffect(() => {
+    document.documentElement.classList.add('restaurant-page-active');
+
+   return () => {
+    document.documentElement.classList.remove('restaurant-page-active');
+  };
+  }, []);
+
   const headerImg = coverImages[restaurantId];
   const panelImg = panelImages[restaurantId];
 
   return (
     <div className='restaurant-page'>
+    <div className='navbar-margin'>
       <header className="navbar">
         <img src={logo2} alt="PykPyk Logo" className="logo" onClick={() => navigate('/home')}/>
 
@@ -203,6 +212,7 @@ export default function Restaurant() {
 
         <div className='rest-banner' style={{ backgroundImage: `url(${headerImg})` }}/>
       </header>
+    </div>
 
       <div className="rest-panels">
         <div className="restaurant-floating-logo">

@@ -5,6 +5,9 @@ body.restaurant-page-active {
     background: #fff;
   }
 */
+html.restaurant-page-active .navbar {
+  margin-bottom: 135px;
+}
 
 .navbar {
     position: fixed;
@@ -14,8 +17,6 @@ body.restaurant-page-active {
     height:80px;     
     background: #fff;
   }
-  
-
   .rest-page {
     background: #fff;
   }
@@ -26,10 +27,9 @@ body.restaurant-page-active {
     left: 0;
     right: 0;
     height: 210px;
-    width: 1750px;
+    width: 100%;
     background-size:cover;
     background-position: center;
-    z-index: 0;
   }
   
 
@@ -46,8 +46,7 @@ body.restaurant-page-active {
     gap: 20px;
     max-width: 1200px;     
     padding: 0 20px;
-    margin-top: 105px;  
-    margin-left: 135px;    
+    margin-left: 250px;    
     align-items: flex-start;
   }
   
@@ -208,7 +207,7 @@ body.restaurant-page-active {
   z-index: 2;               
   max-width: 1010px;
   margin-top: -350px;
-  margin-left: 155px;
+  margin-left: 270px;
   padding: 20px;
   background: #fff;
   border-radius: 12px;
@@ -377,6 +376,8 @@ body.restaurant-page-active {
   background-color: #239430;
   cursor: pointer;
 }
+
+
 
 
 

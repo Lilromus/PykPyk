@@ -101,7 +101,7 @@ export default function Cart() {
               &nbsp;
           </p>
 
-          <h2 className="section-title">Delivery address</h2>
+          <h2 className="section-title">Adres Dostawy</h2>
 
           <div className="custom-dropdown">
             <div
@@ -151,7 +151,7 @@ export default function Cart() {
               onChange={(e) => setApartment(e.target.value)}/>
           </div>
 
-          <h2 className="section-title">Payment method</h2>
+          <h2 className="section-title">Metoda Płatności</h2>
           <div className="payment-options">
             <div
               className={
@@ -161,7 +161,7 @@ export default function Cart() {
               }
               onClick={() => setSelectedPayment('credit')}>
               <img src={creditCard} alt="Credit Card" className="payment-icon"/>
-              <span>Credit Card</span>
+              <span>Karta Kredytowa</span>
             </div>
 
             <div
@@ -172,7 +172,7 @@ export default function Cart() {
               }
               onClick={() => setSelectedPayment('cash')}>
               <img src={Cash} alt="Cash" className="payment-icon"/>
-              <span>Cash</span>
+              <span>Gotówka</span>
             </div>
 
             <div
@@ -202,24 +202,24 @@ export default function Cart() {
         <div className="cart-right">
           <div className="summary-card">
             <div className="summary-header">
-              <h3>Summary</h3>
+              <h3>Podsumowanie</h3>
               <img src={foodLogo} alt="Food logo" className="summary-logo" />
             </div>
 
             <hr/>
 
             <div className="summary-line">
-              <span>Products</span>
+              <span>Produkty</span>
               <span>{totalAmount.toFixed(2)} zł</span>
             </div>
 
             <div className="summary-line">
-              <span>Delivery</span>
+              <span>Dostawa</span>
               <span>2,99 zł</span>
             </div>
 
             <div className="summary-total">
-              <span>TOTAL</span>
+              <span>Łącznie</span>
               <span>{(totalAmount + 2.99).toFixed(2)} zł</span>
             </div>
 
@@ -244,7 +244,7 @@ export default function Cart() {
                   selectedPayment
                 );
               }}>
-              Order and pay
+              Zamów i zapłać
             </button>
 
             <div className="summary-scallops" />

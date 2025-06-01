@@ -5,9 +5,9 @@ body, html {
     padding: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh; 
+    align-items: center;     
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
   
@@ -203,5 +203,34 @@ p a:hover {
     display: flex;
     justify-content: space-between;
     gap: 10px;
+}
+
+
+::-webkit-scrollbar {
+  width: 17px;           
+  height: 17px;          
+}
+
+
+::-webkit-scrollbar-track {
+  background: #f0f0f0; 
+  border-radius: 8px;   
+}
+
+
+::-webkit-scrollbar-thumb {
+  background-color: #f2c261; 
+  border-radius: 8px;     
+  border: 3px solid #f0f0f0;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #efb541;
+}
+
+
+::-webkit-scrollbar-thumb:active {
+  background-color: #efb541;
 }
 

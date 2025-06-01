@@ -43,6 +43,8 @@ function Home() {
     borderRadius: '4px'
   };
 
+
+
   return (
     <div style={{ margin: 0, padding: 0 }}>
       {/* Nawigacja */}
@@ -107,7 +109,6 @@ function Home() {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        paddingTop: '2350px',
         paddingLeft: '50px',
         paddingRight: '50px',
         gap: '40px',

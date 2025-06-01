@@ -11,24 +11,45 @@ function Kurier() {
   const [errorMessage, setErrorMessage] = useState('');
   const navigate = useNavigate();
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+    const handleSubmit = (e) => {
+        e.preventDefault();
 
-    if (!Imie || !Nazwisko || !Wiek || !Miasto || !Pojazd) {
-      setErrorMessage('Proszę wypełnić wszystkie pola.');
-      return;
-    }
+        if (!Imie || !Nazwisko || !Wiek || !Miasto || !Pojazd) {
+            setErrorMessage('Proszę wypełnić wszystkie pola.');
+            return;
+        }
 
-    if (parseInt(Wiek) < 18) {
-      setErrorMessage('Musisz mieć co najmniej 18 lat.');
-      return;
-    }
+        if (parseInt(Wiek) < 18) {
+            setErrorMessage('Musisz mieć co najmniej 18 lat.');
+            return;
+        }
 
-    setErrorMessage('');
-    setTimeout(() => {
-      navigate('/');
-    }, 1000);
-  };
+        setErrorMessage('');
+
+        fetch('http://localhost:5090/api/kurier/add', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                imie: Imie,
+                nazwisko: Nazwisko,
+                miasto: Miasto,
+                wiek: parseInt(Wiek),
+                pojazd: Pojazd
+            })
+        })
+            .then(res => {
+                if (!res.ok) throw new Error('Błąd zapisu kuriera');
+                return res.json();
+            })
+            .then(data => {
+                console.log(data);
+                navigate('/');
+            })
+            .catch(err => {
+                setErrorMessage(err.message);
+            });
+    };
+
 
   const inputStyle = (value) => {
     if (errorMessage && value === '') {
